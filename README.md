@@ -5,25 +5,25 @@ Je rajouterai ici des informations au READ ME
 Pour l'instant, READ ME est à l'état de test  
 
 J'ai appris les lignes de commandes de GIT  
-pwd  
-ls -la  
-cd  
-mv  
-rm  
-touch  
-mkdir  
+>pwd  
+>ls -la  
+>cd  
+>mv  
+>rm  
+>touch  
+>mkdir  
 ainsi que les moyens de me déplacer dans les dossiers . .. / *  
 pour faire une modif dans un dossier, ajouter le paramètre -r après la commande, comme par exemple rm -r dossier  
 
 Les commandes liées au partage GITHUB sont :  
-git init  
-git clone  
-git add  
-git pull  
-git push  
-git status  
-git branch  
-git checkout  
+>git init  
+>git clone  
+>git add  
+>git pull  
+>git push  
+>git status  
+>git branch  
+>git checkout  
 
 Pour se repositionner au niveau utilisateur de mes dossier : cd
 
