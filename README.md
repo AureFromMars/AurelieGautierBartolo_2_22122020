@@ -36,6 +36,6 @@ et si je veux l'écrire dans le corps du fichier mais sans l'interpréter, il fa
 Pour commiter : git commit -m "Message" et c'est tout !
 
 Revoir dans quel ordre faire les choses :
-git add "READ ME.md"
-git commit -m "Message de modif du READ ME"
-git push origine features
+> git add "READ ME.md"
+> git commit -m "Message de modif du READ ME"
+> git push origine features
