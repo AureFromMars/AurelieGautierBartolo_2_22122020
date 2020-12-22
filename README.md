@@ -37,5 +37,5 @@ Pour commiter : git commit -m "Message" et c'est tout !
 
 Revoir dans quel ordre faire les choses :  
 > git add "READ ME.md" sert à ajouter mes modifs à la branche locale  
-> git commit -m "Message de modif du READ ME" sert à ???  
+> git commit -m "Message de modif du READ ME" sert à ...  
 > git push origine features sert à pousser mes modifs locales sur le serveur distant  
