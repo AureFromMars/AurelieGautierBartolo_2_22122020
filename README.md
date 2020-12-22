@@ -34,3 +34,7 @@ cat << END > monfichier.txt pour écrire dans le fichier mais en écrasant les d
 et si je veux l'écrire dans le corps du fichier mais sans l'interpréter, il faut mettre devant un "\"
 
 Pour commiter : git commit -m "Message" et c'est tout !
+
+Je suis pas sûre d'avoir très bien compris mais
+git pull origin features
+permet de mettre à jour ma branche sur serveur distant
