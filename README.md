@@ -12,6 +12,7 @@ J'ai appris les lignes de commandes de GIT
 >rm  
 >touch  
 >mkdir  
+
 ainsi que les moyens de me déplacer dans les dossiers . .. / *  
 pour faire une modif dans un dossier, ajouter le paramètre -r après la commande, comme par exemple rm -r dossier  
 
