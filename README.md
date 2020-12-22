@@ -6,7 +6,7 @@ Pour faire des retours à la ligen dans un fichier .md Markdown : mettre 2 espac
 Je rajouterai ici des informations au READ ME  
 Pour l'instant, READ ME est à l'état de test  
 
-J'ai appris les lignes de commandes de base d'un terminal
+J'ai appris les lignes de commandes de base d'un terminal  
 >pwd  
 >ls -la  
 >cd  
