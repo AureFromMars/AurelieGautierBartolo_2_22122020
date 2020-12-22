@@ -28,7 +28,7 @@ Pour se repositionner au niveau utilisateur de mes dossier : cd
 
 Ah oui, et bien sûr :
 \> et >>
-notamment avec cat << END >> monfichier.txt pour écrei dans le fichier, mais en concaténant  
+notamment avec cat << END >> monfichier.txt pour écrire dans le fichier, mais en concaténant  
 cat << END > monfichier.txt pour écrire dans le fichier mais en écrasant les données  
 \END permet de clore l'édition du fichier, mais je peux mettre ce que je veux  
 et si je veux l'écrire dans le corps du fichier mais sans l'interpréter, il faut mettre devant un "\"  
