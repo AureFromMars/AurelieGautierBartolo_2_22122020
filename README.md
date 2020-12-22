@@ -1,33 +1,34 @@
 # AurelieGautierBartolo_2_22122020
 OC P2 Transformer une maquette en site web
-Je rajouterai ici des informations au READ ME
-Pour l'instant, READ ME est à l'état de test
 
-J'ai appris les lignes de commandes de GIT
-pwd
-ls -la
-cd
-mv
-rm
-touch
-mkdir
-ainsi que les moyens de me déplacer dans les dossiers . .. / *
-pour faire une modif dans un dossier, ajouter le paramètre -r après la commande, comme par exemple rm -r dossier
+Je rajouterai ici des informations au READ ME  
+Pour l'instant, READ ME est à l'état de test  
 
-Les commandes liées au partage GITHUB sont :
-git init
-git clone
-git add
-git pull
-git push
-git status
-git branch
-git checkout
+J'ai appris les lignes de commandes de GIT  
+pwd  
+ls -la  
+cd  
+mv  
+rm  
+touch  
+mkdir  
+ainsi que les moyens de me déplacer dans les dossiers . .. / *  
+pour faire une modif dans un dossier, ajouter le paramètre -r après la commande, comme par exemple rm -r dossier  
+
+Les commandes liées au partage GITHUB sont :  
+git init  
+git clone  
+git add  
+git pull  
+git push  
+git status  
+git branch  
+git checkout  
 
 Pour se repositionner au niveau utilisateur de mes dossier : cd
 
-Ah oui, et bien sûr :
-\> et >>
+Ah oui, et bien sûr :  
+\> et >>  
 notamment avec cat << END >> monfichier.txt pour écrire dans le fichier, mais en concaténant  
 cat << END > monfichier.txt pour écrire dans le fichier mais en écrasant les données  
 \END permet de clore l'édition du fichier, mais je peux mettre ce que je veux  
