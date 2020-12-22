@@ -1,6 +1,8 @@
 # AurelieGautierBartolo_2_22122020
 OC P2 Transformer une maquette en site web
 
+Pour faire des retours à la ligen dans un fichier .md Markdown : mettre 2 espaces à la fin de la ligne
+
 Je rajouterai ici des informations au READ ME  
 Pour l'instant, READ ME est à l'état de test  
 
@@ -37,7 +39,7 @@ et si je veux l'écrire dans le corps du fichier mais sans l'interpréter, il fa
 
 Pour commiter : git commit -m "Message" et c'est tout !
 
-Revoir dans quel ordre faire les choses :  
-> git add "READ ME.md" sert à ajouter mes modifs à la branche locale  
-> git commit -m "Message de modif du READ ME" sert à ...  
-> git push origine features sert à pousser mes modifs locales sur le serveur distant  
+3 versions locales pour 1 serveur distant :  
+> git add "READ ME.md" sert à ajouter mes modifs faites dans la version "working directory" [1] to the version "stage" [2]  
+> git commit -m "Message de modif du READ ME" sert à ajouter les modifs faites dans "stage" [2] to the "repository" [3] version  
+> git push origine features sert à pousser mes modifs locales sur le serveur distant de GIT HUB [4]  
