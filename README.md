@@ -27,7 +27,7 @@ git checkout
 Pour se repositionner au niveau utilisateur de mes dossier : cd
 
 Ah oui, et bien sûr :
-> et >>
+\> et >>
 notamment avec cat << END >> monfichier.txt pour écrei dans le fichier, mais en concaténant
 cat << END > monfichier.txt pour écrire dans le fichier mais en écrasant les données
 \END permet de clore l'édition du fichier, mais je peux mettre ce que je veux
@@ -35,6 +35,7 @@ et si je veux l'écrire dans le corps du fichier mais sans l'interpréter, il fa
 
 Pour commiter : git commit -m "Message" et c'est tout !
 
-Je suis pas sûre d'avoir très bien compris mais
-git pull origin features
-permet de mettre à jour ma branche sur serveur distant
+Revoir dans quel ordre faire les choses :
+git add "READ ME.md"
+git commit -m "Message de modif du READ ME"
+git push origine features
