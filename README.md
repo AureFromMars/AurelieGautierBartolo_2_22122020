@@ -32,3 +32,5 @@ notamment avec cat << END >> monfichier.txt pour écrei dans le fichier, mais en
 cat << END > monfichier.txt pour écrire dans le fichier mais en écrasant les données
 \END permet de clore l'édition du fichier, mais je peux mettre ce que je veux
 et si je veux l'écrire dans le corps du fichier mais sans l'interpréter, il faut mettre devant un "\"
+
+Pour commiter : git commit -m "Message" et c'est tout !
