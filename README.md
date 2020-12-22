@@ -45,8 +45,8 @@ Pour commiter : git commit -m "Message" et c'est tout !
 > git push origine features sert à pousser mes modifs locales sur le serveur distant de GIT HUB [4]  
 
 Les branches
-> git checkout branch me permet d'aller sur la branche nommée "branche"
-> git checkout main me permet d'aller sur main
-> git branch pour vérifier où je me trouve
+> git checkout branch me permet d'aller sur la branche nommée "branche"  
+> git checkout main me permet d'aller sur main  
+> git branch pour vérifier où je me trouve  
 
-Je ne suis pas sûre de réussir à MEP sur main
+Demander à Stan de vérifier ma compréhension de github pour développer sur features puis passer sur main
