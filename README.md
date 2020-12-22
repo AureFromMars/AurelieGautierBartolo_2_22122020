@@ -4,7 +4,7 @@ OC P2 Transformer une maquette en site web
 Je rajouterai ici des informations au READ ME  
 Pour l'instant, READ ME est à l'état de test  
 
-J'ai appris les lignes de commandes de GIT  
+J'ai appris les lignes de commandes de base d'un terminal
 >pwd  
 >ls -la  
 >cd  
