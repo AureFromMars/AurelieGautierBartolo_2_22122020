@@ -1,0 +1,149 @@
+<!DOCTYPE html><!-- Nouveau doctype simplifié -->
+<html lang="fr"><!-- Langue du site -->
+    <head>
+        <!-- En-tête de la page -->
+        <meta charset="utf-8" /><!-- Encodage des caractères -->
+        <link rel="stylesheet" href="style.css" /><!-- Fait le lien avec le fichier CSS cible situé à la racine du même dossier -->
+        <link rel="preconnect" href="https://fonts.gstatic.com"><!-- Fait le lien vers la page de la font, utiliser la prioriété CSS @font-face si Google Font pas disponible -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"><!-- Fait le lien avec la font spécifique -->
+        <title>Reservia</title>
+        <!--[if IE]>
+        <style type="text/css">
+        html pre
+        {
+        width: 636px ;
+        }
+        </style>
+        <![endif]--><!-- Mettre directement dans le CSS avec, entre les balises conditionnelles IE : <link rel="stylesheet" type="text/css" href="only-ie.css" /> -->
+    </head>
+    <body>
+        <!-- HEADER -->
+        <header>
+            <div class="logo"><a href="index.html"><img src="images/reservia_logo.png" alt="Reservia" title="Page d'accueil de Reservia" style="height:100px;"/></a></div>
+            <nav>
+                <ul class="menu">
+                    <li id="menu1"><a href="#accomodation_anchor">Hébergements</a></li>
+                    <li id="menu2"><a href="#activities_anchor">Activités</a></li>
+                    <li id="menu3"><a href="#">S'inscrire</a></li>
+                </ul>
+            </nav>
+        </header>
+        <!-- SEARCH BAR -->
+        <div class="search">
+            <div>
+                <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+                <p>En plein centre ville ou en pleine nature</p>
+            </div>
+            <form>
+                <input type="search" name="q" placeholder="Marseille, France">
+                <input type="submit" value="Rechercher">
+            </form>
+            </div>
+        </div>
+        <!-- FILTERS -->
+        <div class="filters">
+            <ul>
+                <li id="economique"><a href="#">Economique</a></li>
+                <li id="familial"><a href="#">Familial</a></li>
+                <li id="romantique"><a href="#">Romantique</a></li>
+                <li id="animaux"><a href="#">Animaux autorisés</a></li>
+            </ul>
+        </div>
+        <!-- MAIN -->
+        <main>
+            <div class="filters">
+                <div class="filters_links">
+                    <h4>Filtres</h4>
+                </div>
+                <div class="filters_results"><!-- A RENOMMER -->
+                    <p>Plus de 500 logements sont disponibles dans cette ville</p>
+                </div>
+            </div>
+            <div class="search_results"><!-- TITRES DES RESULTATS DE RECHERCHE ET ACTIVITES EN H3 -->
+                <section class="accomodation">
+                    <h2 id="accomodation_anchor">Hébergements à Marseille</h2>
+                    <div class="results">
+                        <img id="canebiere">
+                        <h4>Auberge de la Canebière</h4>
+                        <p>Nuit à partir de <strong>25€</strong></p>
+                        <img id="4stars">
+                    </div>
+                    <div class="results">
+                        <img id="port">
+                        <h4>Hôtel du port</h4>
+                        <p>Nuit à partir de 52€</p>
+                        <img>
+                    </div>
+                    <div class="results">
+                        <img id="mouettes">
+                        <h4>Hôtel Les mouettes</h4>
+                        <p>Nuit à partir de 76€</p>
+                        <img>
+                    </div>
+                    <div class="results">
+                        <img id="mer">
+                        <h4>Hôtel de la mer</h4>
+                        <p>Nuit à partir de 46€</p>
+                        <img>
+                    </div>
+                    <div class="results">
+                        <img id="panier">
+                        <h4>Auberge Le Panier</h4>
+                        <p>Nuit à partir de <strong>23€</strong></p>
+                        <img>
+                    </div>
+                    <div class="results">
+                        <img id="amina">
+                        <h4>Hôtel chez Amina</h4>
+                        <p>Nuit à partir de 96€</p>
+                        <img>
+                    </div>
+                    <h4><a href="">Afficher plus</a></h4>
+                </section>
+                <aside class="most_popular">
+                    <h2>Les plus populaires</h2>
+                    <div class="popular">
+                        <img id="soleil">
+                        <h4>Hôtel Le soleil du matin</h4>
+                        <p>Nuit à partir de 128€</p>
+                        <img>
+                    </div>
+                    <div class="popular">
+                        <img id="eau">
+                        <h4>Au coeur de l'eau Chambre d'hôtes</h4>
+                        <p>Nuit à partir de 71€</p>
+                        <img>
+                    </div>
+                    <div class="popular">
+                        <img id="bleu">
+                        <h4>Hôtel Tout bleu et Blanc</h4>
+                        <p>Nuit à partir de 68€</p>
+                        <img>
+                    </div>
+                </aside>
+            </div>
+            <div class="activities">
+                <h2 id="activities_anchor">Activities</h2>
+            </div>
+        </main>
+        <!-- FOOTER -->
+        <footer>
+            <div>
+                <h4>A propos</h4>
+                <p><a href="#">Fonctionnement du site</a></p>
+                <p><a href="#">Conditions générales de vente</a></p>
+                <p><a href="#">Données et confidentialité</a></p>
+            </div>
+            <div>
+                <h4>Nos hébergements</h4>
+                <p><a href="#">Charte qualité</a></p>
+                <p><a href="#">Soumettre votre hôtel</a></p>
+            </div>
+            <div>
+                <h4>Assistance</h4>
+                <p><a href="#">Centre d'aide</a></p>
+                <p><a href="#">Nous contacter</a></p>
+            </div>
+        </footer>
+    </body>
+</html>
