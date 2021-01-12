@@ -2,34 +2,63 @@
 par Aurélie GAUTIER BARTOLO
 */
 
-/*TEXT*/
+/************ICONS************/
+
+.fas
+{
+    border-radius: 50%;
+}
+
+.blue
+{
+    color: #0065FC;
+}
+
+.grey
+{
+    color: #F2F2F2;
+}
+
+/************TEXT************/
+
+@font-face {
+    font-family: 'Raleway', sans-serif;
+}
 
 p, h1, h2, h3, h4/*S'applique à toutes ces balises*/
 {
-    /*font-family: 'Open Sans', sans-serif; APPLIQUE A BODY*/
+    
+}
+
+ul
+{
+    list-style-type : none;
+    margin: 0;
+    padding: 0;
 }
 
 h1
 {
-    font-size: 140%;
+    font-size: 130%;
 }
 
 h2
 {
-    font-size: 140%;
+    font-size: 120%;
 }
 
 h3
 {
-    font-size: 120%;
+    font-size: 110%;
 }
 
 h4
 {
-    font-size: 100%;
+
+    font-style: bold;
 }
 
-a:link
+a:link, a:visited
 {
     text-decoration: none;
     color: #000000;
@@ -40,41 +69,65 @@ a:hover
     text-decoration: underline;
 }
 
-a:visited
-{
-    color: #000000;
-}
-
 a:active
 {
     color: #0065FC;
 }
 
+/************GLOBAL************/
 
-/*HEADER*/
+body *
+{
+    font-family: 'Raleway', sans-serif;
+}
 
 body
 {
-    /*max-width: 80%;*/
-    justify-content: center;
-    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    margin: auto;
 }
+
+main, header
+{
+    width:95%;
+    margin: auto;
+    /*margin: 0 40px 0 40px;*/
+}
+
+/************HEADER************/
 
 header
 {
-    display: inline-flex;
-	text-align: center ;
+    display: flex;
 }
 
-.logo/*S'applique à tous les objets ayant ce même nom logo d'attribut class*/
+.logo img/*S'applique à tous les objets ayant le même nom logo d'attribut class*/
 {
-	text-align: center ;
+	
 }
 	
 nav
 {
-    float:right;
-    text-align: center ;
+    
+}
+
+.menu li
+{
+    float: left;
+    margin : 30px 30px 0 0 !important;  /* tous navigateurs */
+}
+
+.active a
+{
+    color: #0065FC;
+    border-top: 2px #0065FC solid;
+    text-decoration: none;
+    padding-top: 28px;
+}
+
+#register a
+{
+    font-weight: bold;
+    color: #0065FC;
 }
 
 .menu a:hover, .menu a:focus
@@ -82,33 +135,30 @@ nav
     color: #0065FC;
     border-top: 2px #0065FC solid;
     text-decoration: none;
-    padding-top: 30px;
+    padding-top: 28px;
 }
 
-.menu
-{
-    list-style-type : none;
-    /*margin-top: 30px;*/
-}
+/************MAIN************/
 
-.menu li
-{
-    float: left;
-    text-decoration: none;
-    margin : 30px 0 0 30px !important;  /* tous navigateurs */
-    /*margin : 20px 10px 0 10px;  /* IE */
-}
-
-/*SEARCH BAR*/
+/*SEARCH*/
 
 .search
 {
-
+ 
 }
 
 form
 {
+    display: flex;
+    align-items: center;
+    max-width: 300px;
+}
 
+.fa-map-marker-alt
+{
+    background-color: #F2F2F2;
+    border: 2px solid #F2F2F2;
+    border-radius: 15px 0 0 15px; /* top-left top-right bottom-right bottom-left */
 }
 
 input[type=search], input[type=submit]
@@ -118,93 +168,153 @@ input[type=search], input[type=submit]
     cursor: pointer;
 }
 
-input[type=submit]
+form input[type=search]
 {
-    background-color: #0065FC;
-    border: none;
-    color: white;
-    cursor: pointer;
-    border-radius: 0 15px 15px  0;
+    flex: 1 1 auto;
+    border: 2px solid #F2F2F2;
 }
 
-input[type=search], input[type=submit]
+form input[type=submit]
 {
-    border: 1px solid #F2F2F2;
+    background-color: #0065FC;
+    border: 2px solid #0065FC;
+    color: white;
+    cursor: pointer;
+    border-radius: 0 15px 15px 0; /* top-left top-right bottom-right bottom-left */
 }
 
 /*FILTERS*/
 
 .filters
 {
-
+    margin: 40px 20px 30px 0 ;
 }
 
-.filters_links
+.filters *
 {
-
+    display: inline;
 }
 
-.filters_results
+.filters div
 {
-
+    border-style: solid;
+    border-color:#F2F2F2;
+    border-radius: 100px;
+    padding: 13px 20px 13px 0;
+    line-height: 46px;
+    margin-left: 20px;
 }
 
-/*MAIN*/
-
-main
+.filters div .fas
 {
-    justify-content: center;
+    background-color: #DEEBFF;
+    border: 6px solid #DEEBFF;
+    width: 40px;
+	line-height: 40px;
+    text-align: center;
+    margin-right: 15px;
+}
 
+.fa-info
+{
+    border: 2px solid #F2F2F2;
+    border-radius: 50%;
+    margin-right: 10px;
+    padding: 10px;
+    width: 10px;
+    height: 10px;
+    line-height: 10px;
+    text-align: center;
+}
+
+/*SECTION DES RESULTATS DE RECHERCHE*/
+
+.rounded-box
+{
+    border-radius: 15px;
+}
+
+.shadow
+{
+    box-shadow: 0px 6px 6px #dddddd; /* décalage-horizontal décalage-vertical adoucissement couleur */
 }
 
 .search_results
 {
     display: flex;
-	text-align: left ;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
-.accomodation blabla
+/*HEBERGEMENT*/
+
+.accomodation
 {
-    text-align: left ;
+    max-width: 700px;
+}
+
+.flex-results, .flex-popular
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.flex-results div, .flex-popular div
+{
+    width: 200px;
+    background-color: #FFFFFF;
+    border: 4px white solid;
+    margin: 20px 0 20px 0;
+}
+
+.most_popular, .accomodation
+{
+    padding: 40px;
     background-color: #F2F2F2;
     border-radius: 15px;
 }
 
-.most_popular
+.popular_title
 {
-    text-align: left ;
-    background-color: #F2F2F2;
-    border-radius: 15px;
+    display: inline;
+    line-height: 20px;
 }
 
-.results
+.flex-popular
 {
-    text-align: left ;
-    background-color: #ffffff;
-    border-radius: 15px;
-    border: 4px white solid;
+    flex-direction: column;
 }
 
-.popular
+.stars
 {
-    text-align: left ;
-    background-color: #f2f2f2;
-    border-radius: 15px;
-    border: 4px white solid;
+    display: inline-flex;
 }
 
-/*ACTIVITIES*/
+/*SECTION DES ACTIVITIES*/
 
 .activities
 {
-    text-align: left ;
     justify-content: center;
 }
 
-/*FOOTER*/
+/************FOOTER************/
 
 footer
 {
     display: flex;
+    flex-wrap: wrap;
+    margin-top: 60px;
+
     background-color: #F2F2F2;
+    padding: 40px;
+
+}
+
+footer div
+{
+    padding-right: 150px;
+    margin-top: -20px;
 }
