@@ -66,7 +66,8 @@ a:link, a:visited
 
 a:hover
 {
-    text-decoration: underline;
+    /*text-decoration: underline;*/
+    color: #0065FC;
 }
 
 a:active
@@ -243,7 +244,7 @@ form input[type=submit]
 {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
+    flex-direction: row-reverse;
     justify-content: space-between;
 }
 
@@ -252,25 +253,70 @@ form input[type=submit]
 .accomodation
 {
     max-width: 700px;
+    padding: 40px;
+    background-color: #F2F2F2;
+    border-radius: 15px;
 }
 
-.flex-results, .flex-popular
+.flex-results
 {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    flex-direction: row;
-}
 
-.flex-results div, .flex-popular div
-{
-    width: 200px;
-    background-color: #FFFFFF;
-    border: 4px white solid;
+    justify-content: center;
     margin: 20px 0 20px 0;
 }
 
-.most_popular, .accomodation
+.flex-results div
+{
+    display: flex;
+    width: auto;
+    margin: 20px;
+    background-color: #FFFFFF;
+    border: 4px white solid;
+
+    background-size: cover;
+    justify-content: space-between;
+}
+
+/*#inline
+{
+    display: inline;
+}*/
+
+/*#marcus-loke
+{
+    background-image: url("/images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg");
+}
+
+#fred-kleber
+{
+    background-image: url("/images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg");
+}
+
+#reisetopia
+{
+    background-image: url("/images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg");
+}
+
+#annie-spratt
+{
+    background-image: url("/images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg");
+}
+
+#nicate-lee
+{
+    background-image: url("/images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg");
+}
+
+#febrian-zakaria-sj
+{
+    background-image: url("/images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg");
+}*/
+
+/*LES PLUS POPULAIRES*/
+
+.most_popular
 {
     padding: 40px;
     background-color: #F2F2F2;
@@ -286,6 +332,18 @@ form input[type=submit]
 .flex-popular
 {
     flex-direction: column;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.flex-popular div
+{
+    width: 200px;
+    background-color: #FFFFFF;
+    border: 4px white solid;
+    margin: 20px 0 20px 0;
 }
 
 .stars
@@ -293,12 +351,57 @@ form input[type=submit]
     display: inline-flex;
 }
 
+/*#emile-guillemot
+{
+    background-image: url("/images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg");
+}
+
+#aw-creative
+{
+    background-image: url("/images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg");
+}
+
+#febrian-zakaria-m
+{
+    background-image: url("/images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg");
+}*/
+
 /*SECTION DES ACTIVITIES*/
 
 .activities
 {
     justify-content: center;
 }
+
+/*#reno-laithienne
+{
+    background-image: url("/images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg");
+}
+
+#paul-hermann
+{
+    background-image: url("/images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg");
+}
+
+#kevin-hikari
+{
+    background-image: url("/images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg");
+}
+
+#kilyan-sockalingum
+{
+    background-image: url("/images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg");
+}
+
+#florian-wehde
+{
+    background-image: url("/images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg");
+}
+
+#lena-paulin
+{
+    background-image: url("/images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg");
+}*/
 
 /************FOOTER************/
 
