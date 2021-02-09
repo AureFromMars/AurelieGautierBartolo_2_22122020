@@ -2,6 +2,10 @@
 par Aurélie GAUTIER BARTOLO
 */
 
+
+/*Sous 900px : mettre le grid sur 2 colonnes*/
+
+
 /************ICONS************/
 
 .fas
@@ -27,7 +31,6 @@ par Aurélie GAUTIER BARTOLO
 
 p, h1, h2, h3, h4/*S'applique à toutes ces balises*/
 {
-    
 }
 
 ul
@@ -55,6 +58,7 @@ h3
 h4
 {
     font-size: 1em;
+    margin: 0;
 }
 
 p{
@@ -229,6 +233,7 @@ form
 {
     padding: 10px;
     text-decoration: none;
+    font-weight: bold;
     cursor: pointer;
 }
 
@@ -236,7 +241,6 @@ input[type=search]
 {
     flex: 1 1 auto;
     border: 1px solid #F2F2F2;
-    /*font-weight: 200;**************************************************************/
 }
 
 input[type=submit]
@@ -383,8 +387,8 @@ p.info
 
 .accomodation-box img
 {
-    width:100%;
-    height:100px;
+    width: 100%;
+    height: 100px;
 }
 
 .accomodation-description
@@ -395,10 +399,6 @@ p.info
 .accomodation-description *
 {
     line-height: 1.5em;
-}
-
-#accomodation-anchor
-{
 }
 
 /*LES PLUS POPULAIRES*/
@@ -430,7 +430,6 @@ aside
 
 .popular-box img
 {
-    /*border-radius: 15px 0 0 15px;*/
     width: 130px;
     height: 130px;
 }
@@ -453,23 +452,46 @@ aside
 
 /*SECTION DES ACTIVITIES*/
 
+.section-activities
+{
+    margin: 40px 0 10px 0;
+}
+
+
 .grid
 {
-    display: inline-grid;
+    display: grid;
     grid-template-columns: auto auto auto auto;
-    grid-template-rows: auto auto;
-    grid-gap: 30px;
-    /*max-width: 900px;
-    justify-content: center;
-    grid-auto-rows: minmax(100px, auto);*/
-    margin-bottom: 10px;
+    grid-template-rows: 35% 10% 10% auto;
+    column-gap: 30px;
     height: 400px;
+}
+
+.grid .activity-box a
+{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+
+/*.grid>div
+{
+    display: flex;
+    height: auto;
+}*/
+
+.grid img
+{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
 }
 
 .activity-text
 {
-    margin: 20px;
-    height: 40px;
+    padding: 7px;
+    height: 65px;
 }
 
 .activity-box
@@ -477,73 +499,36 @@ aside
     
 }
 
-.activity-box>a>*
+.one
 {
-}
-
-.activity-box img
-{
-    
-}
-
-.one /**************OK**************/
-{
-    grid-row: 1/3;
-}
-
-.one img
-{
-    height: 300px;
+    grid-row: 1/5;
 }
 
 .two
 {
-    grid-row: 1/1;
-}
-
-.two img
-{
-    height: 195px;
+    grid-row: 1/4;
 }
 
 .three
 {
-    grid-row: 2/3;
+    grid-row: 4/5;
+    margin-top: 30px;
 }
 
-.three img
+.four
 {
-    height: 105px;
-}
-
-.four /**************OK**************/
-{
-    grid-row: 1/3;
-}
-
-.four img
-{
-    height: 300px;
+    grid-row: 1/5;
 }
 
 .five
 {
-    grid-row: 2/3;
-}
-
-.five img
-{
-    height: 120px;
+    grid-row: 1/3;
 }
 
 .six
 {
-    grid-row: 1/1;
-}
-
-.six img
-{
-    height: 180px;
+    grid-row: 3/5;
+    margin-top: 30px;
 }
 
 /************FOOTER************/
