@@ -31,6 +31,7 @@ par Aurélie GAUTIER BARTOLO
 
 p, h1, h2, h3, h4/*S'applique à toutes ces balises*/
 {
+    margin: 0;
 }
 
 ul
@@ -43,6 +44,7 @@ ul
 h1
 {
     font-size: 1.3em;
+    margin: 50px 0 15px 0;
 }
 
 h2
@@ -50,7 +52,7 @@ h2
     font-size: 1.4em;
 }
 
-h3
+h3, input
 {
     font-size: 1.1em;
 }
@@ -59,6 +61,7 @@ h4
 {
     font-size: 1em;
     margin: 0;
+
 }
 
 p{
@@ -94,10 +97,16 @@ body
     margin: auto;
 }
 
+#bloc-page
+{
+    margin: auto;
+}
+
 main, header
 {
-    width: 90%;
+    width: 93.05%;
     margin: auto;
+    max-width: 1440px;
 }
 
 .flex
@@ -136,6 +145,13 @@ main, header
     margin: 0;
 }
 
+/**********VOIR PLUS TARD SI LE TEMPS .moving:hover
+{
+    transition-duration: 0.1s;
+    cursor: pointer;
+    height: 100%;
+}*/
+
 /************HEADER************/
 
 nav.flex 
@@ -148,6 +164,7 @@ nav.flex
 
 li.logoContainer
 {
+    margin-top: 50px;
     height: 50px;
     flex: 1 0 140px;
 }
@@ -161,8 +178,7 @@ li.menu
 {
     display: block;
     margin: 0 10px;
-    height: 50px;
-    line-height: 50px;
+    padding: 50px 25px 0 25px;
     border-top: 2px solid transparent;
 }
 
@@ -172,14 +188,6 @@ li.active
     border-top: 2px #0065FC solid;
     text-decoration: none;
 }
-
-/*li:not(.logoContainer) a:hover, li:not(.logoContainer) a:focus
-{
-    color: #0065FC;
-    border-top: 2px #0065FC solid;
-    text-decoration: none;
-    padding-top: 16px;
-}*/
 
 a#register
 {
@@ -209,6 +217,14 @@ a#register
 
 /************MAIN************/
 
+/*TITLE*/
+
+#title
+{
+    margin: 0 0 20px 0;
+}
+
+
 /*SEARCH*/
 
 .search
@@ -218,8 +234,17 @@ a#register
 
 form
 {
-    display: inline-flex;
-    max-width: 300px;
+    display: inline-flex; /****************************pkoi ?***********/
+    margin-bottom: 30px;
+    height: 50px;
+    line-height: 50px;
+}
+
+input[type=search], input[type=submit]
+{
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0 15px;
 }
 
 .fa-map-marker-alt
@@ -227,20 +252,18 @@ form
     background-color: #F2F2F2;
     border: 2px solid #F2F2F2;
     border-radius: 15px 0 0 15px;
-}
-
-.fa-map-marker-alt, input[type=search], input[type=submit]
-{
-    padding: 10px;
-    text-decoration: none;
-    font-weight: bold;
-    cursor: pointer;
+    min-width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    padding: 15px;
 }
 
 input[type=search]
 {
     flex: 1 1 auto;
     border: 1px solid #F2F2F2;
+    width: 235px;
 }
 
 input[type=submit]
@@ -250,25 +273,32 @@ input[type=submit]
     color: white;
     cursor: pointer;
     border-radius: 0 15px 15px 0;
+    margin-left: -1px;
 }
 
 /*FILTERS*/
 
-.filters
+.filters-container
 {
-    margin: 20px 0 20px 0;
+    margin-bottom: 30px;
     align-items: center;
 }
 
-a.filter
+
+
+.filters>h3 /*@media  ajouter une largeur de 100% à mon h3******************************/
+{
+    margin: 0 30px 10px 0;
+}
+
+.filters div
 {
     display: block;
-    height: 40px;
-    width: max-content;
+    height: 50px;
+    /*width: max-content;*/
     border: 2px solid #F2F2F2;
     border-radius: 100px;
-    margin: 10px 0 10px 20px;
-    padding-right: 20px;
+    margin: 0 20px 10px 0;
 }
 
 .filter span
@@ -278,26 +308,20 @@ a.filter
     top: -2px;
     left: -2px;
     background-color: #DEEBFF;
-    width: 40px;
-	line-height: 40px;
+    width: 50px;
+	line-height: 50px;
     text-align: center;
-    margin-right: 15px;
     border-radius: 50%;
-    /*z-index:50;
-    transform: scale(1.1);  A REVOIR***************************************************/
+    /*transform: scale(1.1);  A REVOIR***************************************************/
 }
 
 .filter h3
 {
     display: inline-block;
-    height: 36px;
-    line-height: 36px;
-    margin: 0;
-}
-
-.filters h3 /*@media  ajouter une largeur de 100% à mon h3******************************/
-{
-    margin: 0;
+    height: 50px;
+    line-height: 50px;
+    transform: translateY(-2px);
+    margin: 0 22px 0 12px;
 }
 
 p.info
@@ -305,16 +329,19 @@ p.info
     display: block;
     height: 25px;
     line-height: 25px;
+    margin-bottom: 35px;
 }
 
 .info span
 {
     position: relative;
     display: inline-block;
-    height: 25px;
+    top: -2px;
+    left: -2px;
+    border: 2px solid #F2F2F2;    
     width: 25px;
+    height:25px;
     line-height: 25px;
-    border: 2px solid #F2F2F2;
     border-radius: 50%;
     margin-right: 10px;
     text-align: center;
@@ -462,12 +489,13 @@ aside
 {
     display: grid;
     grid-template-columns: auto auto auto auto;
-    grid-template-rows: 35% 10% 10% auto;
-    column-gap: 30px;
-    height: 400px;
+    /*grid-template-rows: 195px 43px 43px auto;*/
+    grid-template-rows: 43.33% 9.56% 9.56% auto;
+    column-gap: 43px;
+    height: 450px;
 }
 
-.grid .activity-box a
+.activity-box a
 {
     display: flex;
     flex-direction: column;
@@ -475,14 +503,9 @@ aside
     width: 100%;
 }
 
-/*.grid>div
+.activity-box img
 {
-    display: flex;
-    height: auto;
-}*/
-
-.grid img
-{
+    display: block;
     object-fit: cover;
     height: 100%;
     width: 100%;
@@ -490,13 +513,12 @@ aside
 
 .activity-text
 {
-    padding: 7px;
-    height: 65px;
-}
-
-.activity-box
-{
-    
+    display: block;
+    position: sticky;
+    bottom: 0;
+    background-color: #FFFFFF;
+    padding: 10px;
+    min-height: 55px;
 }
 
 .one
@@ -506,13 +528,12 @@ aside
 
 .two
 {
-    grid-row: 1/4;
+    grid-row: 1/3;
 }
 
 .three
 {
     grid-row: 4/5;
-    margin-top: 30px;
 }
 
 .four
@@ -522,24 +543,32 @@ aside
 
 .five
 {
-    grid-row: 1/3;
+    grid-row: 1/2;
 }
 
 .six
 {
     grid-row: 3/5;
-    margin-top: 30px;
 }
 
 /************FOOTER************/
 
 footer
 {
-    display: flex;
-    flex-wrap: wrap;
+    /*display: flex;
+    flex-wrap: wrap;*/
     margin-top: 60px;
     background-color: #F2F2F2;
-    padding: 40px;
+    padding: 40px 0;
+}
+
+#footer
+{
+    width: 93.05%;
+    margin: auto;
+    max-width: 1440px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 footer div

@@ -22,280 +22,288 @@
         <![endif]--><!-- Mettre directement dans le CSS avec, entre les balises conditionnelles IE : <link rel="stylesheet" type="text/css" href="only-ie.css" /> -->
     </head>
     <body>
-        <!-- HEADER -->
-        <header>
-            <nav>
-                <ul class="flex wrap row">
-                    <li class="logoContainer"><a href="index.html"><img src="images/reservia_logo.png" alt="Reservia" title="Page d'accueil de Reservia"/></a></li>
-                    <li class="menu link active"><a href="#accomodation-anchor" title="Découvrez nos hébergements">Hébergements</a></li>
-                    <li class="menu link"><a href="#activities-anchor" title="Découvrez nos activités">Activités</a></li>
-                    <li class="menu"><a id="register" href="" title="Lien prévisionnel non actif">S'inscrire</a></li>
-                </ul>
-            </nav>
-        </header>
-        <!-- MAIN -->
-        <main>
-            <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-            <p>En plein centre ville ou en pleine nature</p>
-            <!-- SEARCH -->
-            <div class="search">
-                <form>
-                    <span class="fas fa-map-marker-alt"></span>
-                    <input type="search" name="q" placeholder="Marseille, France">
-                    <input type="submit" value="Rechercher">
-                </form>
-                <div class="filters flex wrap">
-                    <h3>Filtres</h3>
-                    <a class="filter" href="" title="Lien prévisionnel non actif"><span class="fas fa-money-bill-wave blue"></span><h3>Économique</h3></a>
-                    <a class="filter" href="" title="Lien prévisionnel non actif"><span class="fas fa-child blue"></span><h3>Familial</h3></a>
-                    <a class="filter" href="" title="Lien prévisionnel non actif"><span class="fas fa-heart blue"></span><h3>Romantique</h3></a>
-                    <a class="filter" href="" title="Lien prévisionnel non actif"><span class="fas fa-dog blue"></span><h3>Animaux autorisés</h3></a>
+        <div id="bloc-page">
+            <!-- HEADER tout dans nav pour faire en sorte que s'inscrire soit au même niveau que le logo en mobile -->
+            <header>
+                <nav>
+                    <ul class="flex wrap row">
+                        <li class="logoContainer"><a href="index.html"><img src="images/reservia_logo.png" alt="Reservia" title="Page d'accueil de Reservia"/></a></li>
+                        <li class="menu link active"><a href="#accomodation-anchor" title="Découvrez nos hébergements">Hébergements</a></li>
+                        <li class="menu link"><a href="#activities-anchor" title="Découvrez nos activités">Activités</a></li>
+                        <li class="menu"><a id="register" href="" title="Lien prévisionnel non actif">S'inscrire</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <!-- MAIN -->
+            <main>
+                <div id="title">
+                    <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+                    <p>En plein centre ville ou en pleine nature</p>
                 </div>
-                <p class="info"><span class="fas fa-info blue"></span>Plus de 500 logements sont disponibles dans cette ville</p>
-            </div>
-            <!-- SECTION DES RESULTATS DE RECHERCHE -->
-            <section class="section-results flex wrap">
-                <!-- ASIDE LES PLUS POPULAIRES FLEX-DIRECTION: ROW-REVERSE -->
-                <aside class="grey-box column rounded-box">
-                    <div class="popular-title flex wrap row">
-                        <h2>Les plus populaires</h2>
-                        <span class="fas fa-chart-line"></span>
-                    </div>
-                    <div class="most-popular column">
-                        <div class="popular-box rounded-box white shadow">
-                            <a class="flex" href="" title="Lien prévisionnel non actif">
-                                <img src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Image non disponible"/>
-                                <div class="popular-description">
-                                    <div class="popular-text">
-                                        <h4>Hôtel Le soleil du matin</h4>
-                                        <p>Nuit à partir de 128<strong>€</strong></p>
-                                    </div>
-                                    <ul class="stars">
-                                        <li><span class="fas fa-star blue"></span></li>
-                                        <li><span class="fas fa-star blue"></span></li>
-                                        <li><span class="fas fa-star blue"></span></li>
-                                        <li><span class="fas fa-star blue"></span></li>
-                                        <li><span class="fas fa-star blue"></span></li>
-                                    </ul>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="popular-box rounded-box white shadow">
-                            <a class="flex" href="" title="Lien prévisionnel non actif">
-                                <img src="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Image non disponible" />
-                                <div class="popular-description">
-                                    <div class="popular-text">
-                                        <h4>Au coeur de l'eau Chambre d'hôtes</h4>
-                                        <p>Nuit à partir de 71<strong>€</strong></p>
-                                    </div>
-                                    <ul class="stars">
-                                        <li><span class="fas fa-star blue"></span></li>
-                                        <li><span class="fas fa-star blue"></span></li>
-                                        <li><span class="fas fa-star blue"></span></li>
-                                        <li><span class="fas fa-star blue"></span></li>
-                                        <li><span class="fas fa-star grey"></span></li>
-                                    </ul>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="popular-box rounded-box white shadow">
-                            <a class="flex" href="" title="Lien prévisionnel non actif">
-                                <img src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Image non disponible" title="Auberge de la Canebière" />
-                                <div class="popular-description">
-                                    <div class="popular-text">
-                                        <h4>Hôtel Tout bleu et Blanc</h4>
-                                        <p>Nuit à partir de 68<strong>€</strong></p>
-                                    </div>
-                                    <ul class="stars">
-                                        <li><span class="fas fa-star blue"></span></li>
-                                        <li><span class="fas fa-star blue"></span></li>
-                                        <li><span class="fas fa-star blue"></span></li>
-                                        <li><span class="fas fa-star blue"></span></li>
-                                        <li><span class="fas fa-star grey"></span></li>
-                                    </ul>
-                                </div>
-                            </a>
+                <!-- SEARCH -->
+                <div class="search">
+                    <form>
+                        <span class="fas fa-map-marker-alt"></span>
+                        <input type="search" name="q" placeholder="Marseille, France">
+                        <input type="submit" value="Rechercher">
+                    </form>
+                    <div class="flex row wrap">
+                        <h3>Filtres</h3>
+                        <div class="filters flex row wrap">
+                            <div class="filter"><a href="" title="Lien prévisionnel non actif"><span class="fas fa-money-bill-wave blue"></span><h3>Économique</h3></a></div>
+                            <div class="filter"><a href="" title="Lien prévisionnel non actif"><span class="fas fa-child blue"></span><h3>Familial</h3></a></div>
+                            <div class="filter"><a href="" title="Lien prévisionnel non actif"><span class="fas fa-heart blue"></span><h3>Romantique</h3></a></div>
+                            <div class="filter"><a href="" title="Lien prévisionnel non actif"><span class="fas fa-dog blue"></span><h3>Animaux autorisés</h3></a></div>
                         </div>
                     </div>
-                </aside>
-                <!-- HEBERGEMENTS -->
-                <div class="grey-box column accomodation rounded-box">
-                    <h2 id="accomodation-anchor">Hébergements à Marseille</h2>
-                    <div class="flex wrap accomodation-results row">
-                        <div class="accomodation-box rounded-box white shadow">
-                            <a href="" title="Lien prévisionnel non actif">
-                                <img src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Image non disponible" title="Auberge de la Canebière" />
-                                <div class="accomodation-description">
-                                    <div class="no-margin">
-                                        <h4>Auberge de la Canebière</h4>
-                                        <p>Nuit à partir de <strong>25<strong>€</strong></strong></p>
-                                    </div>
-                                    <ul class="stars">
-                                        <li><span class="fas fa-star blue"></span></li>
-                                        <li><span class="fas fa-star blue"></span></li>
-                                        <li><span class="fas fa-star blue"></span></li>
-                                        <li><span class="fas fa-star blue"></span></li>
-                                        <li><span class="fas fa-star grey"></span></li>
-                                    </ul>
-                                </div>
-                            </a>
+                    <p class="info"><span class="fas fa-info blue"></span>Plus de 500 logements sont disponibles dans cette ville</p>
+                </div>
+                <!-- SECTION DES RESULTATS DE RECHERCHE -->
+                <section class="section-results flex wrap">
+                    <!-- ASIDE LES PLUS POPULAIRES FLEX-DIRECTION: ROW-REVERSE -->
+                    <aside class="grey-box column rounded-box">
+                        <div class="popular-title flex wrap row">
+                            <h2>Les plus populaires</h2>
+                            <span class="fas fa-chart-line"></span>
                         </div>
-                        <div class="accomodation-box rounded-box white shadow">
-                            <a href="" title="Lien prévisionnel non actif">
-                                <img src="images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Image non disponible" title="Auberge de la Canebière" />
-                                <div class="accomodation-description">
-                                    <div class="no-margin">
-                                        <h4>Hôtel du port</h4>
-                                        <p>Nuit à partir de 52<strong>€</strong></p>
-                                    </div>
-                                    <ul class="stars">
-                                        <li><span class="fas fa-star blue"></span></li>
-                                        <li><span class="fas fa-star blue"></span></li>
-                                        <li><span class="fas fa-star blue"></span></li>
-                                        <li><span class="fas fa-star blue"></span></li>
-                                        <li><span class="fas fa-star blue"></span></li>
-                                    </ul>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="accomodation-box rounded-box white shadow">
-                            <a href="" title="Lien prévisionnel non actif">
-                                <img src="images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="Image non disponible" title="Auberge de la Canebière" />
-                                <div class="accomodation-description">
-                                    <div class="no-margin">
-                                        <h4>Hôtel Les mouettes</h4>
-                                        <p>Nuit à partir de 76<strong>€</strong></p>
-                                    </div>
+                        <div class="most-popular column">
+                            <div class="popular-box rounded-box white shadow moving">
+                                <a class="flex" href="" title="Lien prévisionnel non actif">
+                                    <img src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Image non disponible"/>
+                                    <div class="popular-description">
+                                        <div class="popular-text">
+                                            <h4>Hôtel Le soleil du matin</h4>
+                                            <p>Nuit à partir de 128<strong>€</strong></p>
+                                        </div>
                                         <ul class="stars">
-                                        <li><span class="fas fa-star blue"></span></li>
-                                        <li><span class="fas fa-star blue"></span></li>
-                                        <li><span class="fas fa-star blue"></span></li>
-                                        <li><span class="fas fa-star blue"></span></li>
-                                        <li><span class="fas fa-star grey"></span></li>
-                                    </ul>
-                                </div>
+                                            <li><span class="fas fa-star blue"></span></li>
+                                            <li><span class="fas fa-star blue"></span></li>
+                                            <li><span class="fas fa-star blue"></span></li>
+                                            <li><span class="fas fa-star blue"></span></li>
+                                            <li><span class="fas fa-star blue"></span></li>
+                                        </ul>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="popular-box rounded-box white shadow">
+                                <a class="flex" href="" title="Lien prévisionnel non actif">
+                                    <img src="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Image non disponible" />
+                                    <div class="popular-description">
+                                        <div class="popular-text">
+                                            <h4>Au coeur de l'eau Chambre d'hôtes</h4>
+                                            <p>Nuit à partir de 71<strong>€</strong></p>
+                                        </div>
+                                        <ul class="stars">
+                                            <li><span class="fas fa-star blue"></span></li>
+                                            <li><span class="fas fa-star blue"></span></li>
+                                            <li><span class="fas fa-star blue"></span></li>
+                                            <li><span class="fas fa-star blue"></span></li>
+                                            <li><span class="fas fa-star grey"></span></li>
+                                        </ul>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="popular-box rounded-box white shadow">
+                                <a class="flex" href="" title="Lien prévisionnel non actif">
+                                    <img src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Image non disponible" title="Auberge de la Canebière" />
+                                    <div class="popular-description">
+                                        <div class="popular-text">
+                                            <h4>Hôtel Tout bleu et Blanc</h4>
+                                            <p>Nuit à partir de 68<strong>€</strong></p>
+                                        </div>
+                                        <ul class="stars">
+                                            <li><span class="fas fa-star blue"></span></li>
+                                            <li><span class="fas fa-star blue"></span></li>
+                                            <li><span class="fas fa-star blue"></span></li>
+                                            <li><span class="fas fa-star blue"></span></li>
+                                            <li><span class="fas fa-star grey"></span></li>
+                                        </ul>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </aside>
+                    <!-- HEBERGEMENTS -->
+                    <div class="grey-box column accomodation rounded-box">
+                        <h2 id="accomodation-anchor">Hébergements à Marseille</h2>
+                        <div class="flex wrap accomodation-results row">
+                            <div class="accomodation-box rounded-box white shadow">
+                                <a href="" title="Lien prévisionnel non actif">
+                                    <img src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Image non disponible" title="Auberge de la Canebière" />
+                                    <div class="accomodation-description">
+                                        <div class="no-margin">
+                                            <h4>Auberge de la Canebière</h4>
+                                            <p>Nuit à partir de <strong>25<strong>€</strong></strong></p>
+                                        </div>
+                                        <ul class="stars">
+                                            <li><span class="fas fa-star blue"></span></li>
+                                            <li><span class="fas fa-star blue"></span></li>
+                                            <li><span class="fas fa-star blue"></span></li>
+                                            <li><span class="fas fa-star blue"></span></li>
+                                            <li><span class="fas fa-star grey"></span></li>
+                                        </ul>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="accomodation-box rounded-box white shadow">
+                                <a href="" title="Lien prévisionnel non actif">
+                                    <img src="images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Image non disponible" title="Auberge de la Canebière" />
+                                    <div class="accomodation-description">
+                                        <div class="no-margin">
+                                            <h4>Hôtel du port</h4>
+                                            <p>Nuit à partir de 52<strong>€</strong></p>
+                                        </div>
+                                        <ul class="stars">
+                                            <li><span class="fas fa-star blue"></span></li>
+                                            <li><span class="fas fa-star blue"></span></li>
+                                            <li><span class="fas fa-star blue"></span></li>
+                                            <li><span class="fas fa-star blue"></span></li>
+                                            <li><span class="fas fa-star blue"></span></li>
+                                        </ul>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="accomodation-box rounded-box white shadow">
+                                <a href="" title="Lien prévisionnel non actif">
+                                    <img src="images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="Image non disponible" title="Auberge de la Canebière" />
+                                    <div class="accomodation-description">
+                                        <div class="no-margin">
+                                            <h4>Hôtel Les mouettes</h4>
+                                            <p>Nuit à partir de 76<strong>€</strong></p>
+                                        </div>
+                                            <ul class="stars">
+                                            <li><span class="fas fa-star blue"></span></li>
+                                            <li><span class="fas fa-star blue"></span></li>
+                                            <li><span class="fas fa-star blue"></span></li>
+                                            <li><span class="fas fa-star blue"></span></li>
+                                            <li><span class="fas fa-star grey"></span></li>
+                                        </ul>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="accomodation-box rounded-box white shadow">
+                                <a href="" title="Lien prévisionnel non actif">
+                                    <img src="images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="Image non disponible" title="Auberge de la Canebière" />
+                                    <div class="accomodation-description">
+                                        <div class="no-margin">
+                                            <h4>Hôtel de la mer</h4>
+                                            <p>Nuit à partir de 46<strong>€</strong></p>
+                                        </div>
+                                        <ul class="stars">
+                                            <li><span class="fas fa-star blue"></span></li>
+                                            <li><span class="fas fa-star blue"></span></li>
+                                            <li><span class="fas fa-star blue"></span></li>
+                                            <li><span class="fas fa-star grey"></span></li>
+                                            <li><span class="fas fa-star grey"></span></li>
+                                        </ul>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="accomodation-box rounded-box white shadow">
+                                <a href="" title="Lien prévisionnel non actif">
+                                    <img src="images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="Image non disponible" title="Auberge de la Canebière" />
+                                    <div class="accomodation-description">
+                                        <div class="no-margin">
+                                            <h4>Auberge Le Panier</h4>
+                                            <p>Nuit à partir de <strong>23<strong>€</strong></strong></p>
+                                        </div>
+                                        <ul class="stars">
+                                            <li><span class="fas fa-star blue"></span></li>
+                                            <li><span class="fas fa-star blue"></span></li>
+                                            <li><span class="fas fa-star blue"></span></li>
+                                            <li><span class="fas fa-star blue"></span></li>
+                                            <li><span class="fas fa-star grey"></span></li>
+                                        </ul>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="accomodation-box rounded-box white shadow">
+                                <a href="" title="Lien prévisionnel non actif">
+                                    <img src="images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="Image non disponible" title="Auberge de la Canebière" />
+                                    <div class="accomodation-description">
+                                        <div class="no-margin">
+                                            <h4>Hôtel chez Amina</h4>
+                                            <p>Nuit à partir de 96<strong>€</strong></p>
+                                        </div>
+                                        <ul class="stars">
+                                            <li><span class="fas fa-star blue"></span></li>
+                                            <li><span class="fas fa-star blue"></span></li>
+                                            <li><span class="fas fa-star blue"></span></li>
+                                            <li><span class="fas fa-star blue"></span></li>
+                                            <li><span class="fas fa-star blue"></span></li>
+                                        </ul>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <h3><a href="" title="Lien prévisionnel non actif">Afficher plus</a></h3>
+                    </div>
+                </section>
+                <!-- SECTION ACTIVITES -->
+                <section class="section-activities">
+                    <h2 id="activities-anchor">Activités à Marseille</h2>
+                    <div class="grid">
+                        <div class="one activity-box rounded-box shadow">
+                            <a href="" title="Lien prévisionnel non actif">
+                                <img src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Image non disponible" title="Vieux Port" />
+                                <div class="activity-text"><h4>Vieux Port</h4></div>
                             </a>
                         </div>
-                        <div class="accomodation-box rounded-box white shadow">
+                        <div class="two activity-box rounded-box shadow">
                             <a href="" title="Lien prévisionnel non actif">
-                                <img src="images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="Image non disponible" title="Auberge de la Canebière" />
-                                <div class="accomodation-description">
-                                    <div class="no-margin">
-                                        <h4>Hôtel de la mer</h4>
-                                        <p>Nuit à partir de 46<strong>€</strong></p>
-                                    </div>
-                                    <ul class="stars">
-                                        <li><span class="fas fa-star blue"></span></li>
-                                        <li><span class="fas fa-star blue"></span></li>
-                                        <li><span class="fas fa-star blue"></span></li>
-                                        <li><span class="fas fa-star grey"></span></li>
-                                        <li><span class="fas fa-star grey"></span></li>
-                                    </ul>
-                                </div>
+                                <img src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Image non disponible" title="Fort de Pomègues" />
+                                <div class="activity-text"><h4>Fort de Pomègues</h4></div>
                             </a>
                         </div>
-                        <div class="accomodation-box rounded-box white shadow">
+                        <div class="three activity-box rounded-box shadow">
                             <a href="" title="Lien prévisionnel non actif">
-                                <img src="images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="Image non disponible" title="Auberge de la Canebière" />
-                                <div class="accomodation-description">
-                                    <div class="no-margin">
-                                        <h4>Auberge Le Panier</h4>
-                                        <p>Nuit à partir de <strong>23<strong>€</strong></strong></p>
-                                    </div>
-                                    <ul class="stars">
-                                        <li><span class="fas fa-star blue"></span></li>
-                                        <li><span class="fas fa-star blue"></span></li>
-                                        <li><span class="fas fa-star blue"></span></li>
-                                        <li><span class="fas fa-star blue"></span></li>
-                                        <li><span class="fas fa-star grey"></span></li>
-                                    </ul>
-                                </div>
+                                <img src="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Image non disponible" title="Îles du Frioul" />
+                                <div class="activity-text"><h4>Îles du Frioul</h4></div>
                             </a>
                         </div>
-                        <div class="accomodation-box rounded-box white shadow">
+                        <div class="four activity-box rounded-box shadow">
                             <a href="" title="Lien prévisionnel non actif">
-                                <img src="images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="Image non disponible" title="Auberge de la Canebière" />
-                                <div class="accomodation-description">
-                                    <div class="no-margin">
-                                        <h4>Hôtel chez Amina</h4>
-                                        <p>Nuit à partir de 96<strong>€</strong></p>
-                                    </div>
-                                    <ul class="stars">
-                                        <li><span class="fas fa-star blue"></span></li>
-                                        <li><span class="fas fa-star blue"></span></li>
-                                        <li><span class="fas fa-star blue"></span></li>
-                                        <li><span class="fas fa-star blue"></span></li>
-                                        <li><span class="fas fa-star blue"></span></li>
-                                    </ul>
-                                </div>
+                                <img src="images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Image non disponible" title="Parc national des Calanques" />
+                                <div class="activity-text"><h4>Parc national des Calanques</h4></div>
+                            </a>
+                        </div>
+                        <div class="five activity-box rounded-box shadow">
+                            <a href="" title="Lien prévisionnel non actif">
+                                <img src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Image non disponible" title="Notre-Dame-de-la-Garde" />
+                                <div class="activity-text"><h4>Notre-Dame-de-la-Garde</h4></div>
+                            </a>
+                        </div>
+                        <div class="six activity-box rounded-box shadow">
+                            <a href="" title="Lien prévisionnel non actif">
+                                <img src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Image non disponible" title="Parc Longchamp" />
+                                <div class="activity-text"><h4>Parc Longchamp</h4></div>
                             </a>
                         </div>
                     </div>
-                    <h3><a href="" title="Lien prévisionnel non actif">Afficher plus</a></h3>
+                </section>
+            </main>
+            <!-- FOOTER -->
+            <footer>
+                <div id="footer">
+                    <div>
+                        <h3>A propos</h3>
+                        <p><a href="" title="Lien prévisionnel non actif">Fonctionnement du site</a></p>
+                        <p><a href="" title="Lien prévisionnel non actif">Conditions générales de vente</a></p>
+                        <p><a href="" title="Lien prévisionnel non actif">Données et confidentialité</a></p>
+                    </div>
+                    <div>
+                        <h3>Nos hébergements</h3>
+                        <p><a href="" title="Lien prévisionnel non actif">Charte qualité</a></p>
+                        <p><a href="" title="Lien prévisionnel non actif">Soumettre votre hôtel</a></p>
+                    </div>
+                    <div>
+                        <h3>Assistance</h3>
+                        <p><a href="" title="Lien prévisionnel non actif">Centre d'aide</a></p>
+                        <p><a href="" title="Lien prévisionnel non actif">Nous contacter</a></p>
+                    </div>
                 </div>
-            </section>
-            <!-- SECTION ACTIVITES -->
-            <section class="section-activities">
-                <h2 id="activities-anchor">Activités à Marseille</h2>
-                <div class="grid">
-                    <div class="one activity-box rounded-box shadow">
-                        <a href="" title="Lien prévisionnel non actif">
-                            <img src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Image non disponible" title="Vieux Port" />
-                            <div class="activity-text"><h4>Vieux Port</h4></div>
-                        </a>
-                    </div>
-                    <div class="two activity-box rounded-box shadow">
-                        <a href="" title="Lien prévisionnel non actif">
-                            <img src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Image non disponible" title="Fort de Pomègues" />
-                            <div class="activity-text"><h4>Fort de Pomègues</h4></div>
-                        </a>
-                    </div>
-                    <div class="three activity-box rounded-box shadow">
-                        <a href="" title="Lien prévisionnel non actif">
-                            <img src="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Image non disponible" title="Îles du Frioul" />
-                            <div class="activity-text"><h4>Îles du Frioul</h4></div>
-                        </a>
-                    </div>
-                    <div class="four activity-box rounded-box shadow">
-                        <a href="" title="Lien prévisionnel non actif">
-                            <img src="images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Image non disponible" title="Parc national des Calanques" />
-                            <div class="activity-text"><h4>Parc national des Calanques</h4></div>
-                        </a>
-                    </div>
-                    <div class="five activity-box rounded-box shadow">
-                        <a href="" title="Lien prévisionnel non actif">
-                            <img src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Image non disponible" title="Notre-Dame-de-la-Garde" />
-                            <div class="activity-text"><h4>Notre-Dame-de-la-Garde</h4></div>
-                        </a>
-                    </div>
-                    <div class="six activity-box rounded-box shadow">
-                        <a href="" title="Lien prévisionnel non actif">
-                            <img src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Image non disponible" title="Parc Longchamp" />
-                            <div class="activity-text"><h4>Parc Longchamp</h4></div>
-                        </a>
-                    </div>
-                </div>
-            </section>
-        </main>
-        <!-- FOOTER -->
-        <footer>
-            <div>
-                <h3>A propos</h3>
-                <p><a href="" title="Lien prévisionnel non actif">Fonctionnement du site</a></p>
-                <p><a href="" title="Lien prévisionnel non actif">Conditions générales de vente</a></p>
-                <p><a href="" title="Lien prévisionnel non actif">Données et confidentialité</a></p>
-            </div>
-            <div>
-                <h3>Nos hébergements</h3>
-                <p><a href="" title="Lien prévisionnel non actif">Charte qualité</a></p>
-                <p><a href="" title="Lien prévisionnel non actif">Soumettre votre hôtel</a></p>
-            </div>
-            <div>
-                <h3>Assistance</h3>
-                <p><a href="" title="Lien prévisionnel non actif">Centre d'aide</a></p>
-                <p><a href="" title="Lien prévisionnel non actif">Nous contacter</a></p>
-            </div>
-        </footer>
+            </footer>
+        </div>
     </body>
 </html>
 <!-- COMMENTAIRES
