@@ -1,0 +1,598 @@
+/*Styles du site Reservia
+par Aurélie GAUTIER BARTOLO
+*/
+
+
+/*Sous 900px : mettre le grid sur 2 colonnes*/
+
+
+/************ICONS************/
+
+.fas
+{
+    border-radius: 50%;
+}
+
+.blue
+{
+    color: #0065FC;
+}
+
+.grey
+{
+    color: #F2F2F2;
+}
+
+/************TEXT************/
+
+@font-face {
+    font-family: 'Raleway', sans-serif;
+}
+
+p, h1, h2, h3, h4/*S'applique à toutes ces balises*/
+{
+    margin: 0;
+}
+
+ul
+{
+    list-style-type : none;
+    margin: 0;
+    padding: 0;
+}
+
+h1
+{
+    font-size: 1.3em;
+    margin: 50px 0 15px 0;
+}
+
+h2
+{
+    font-size: 1.4em;
+}
+
+h3, input
+{
+    font-size: 1.1em;
+}
+
+h4
+{
+    font-size: 1em;
+    margin: 0;
+
+}
+
+p{
+    /*font-size: 0.9em;*/
+}
+
+a:link, a:visited
+{
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover
+{
+    color: #0065FC;
+}
+
+a:active
+{
+    color: #0065FC;
+}
+
+/************GLOBAL************/
+
+*
+{
+    font-family: 'Raleway', sans-serif;
+    box-sizing: border-box;
+}
+
+body
+{
+    margin: auto;
+}
+
+#bloc-page
+{
+    margin: auto;
+}
+
+main, header
+{
+    width: 93.05%;
+    margin: auto;
+    max-width: 1440px;
+}
+
+.flex
+{
+    display: flex;
+}
+
+.wrap
+{
+    flex-wrap: wrap;
+}
+
+.column
+{
+    flex-direction: column;
+}
+
+.row
+{
+    flex-direction: row;
+}
+
+.rounded-box
+{
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.shadow
+{
+    box-shadow: 0px 6px 6px #dddddd;
+}
+
+.no-margin *
+{
+    margin: 0;
+}
+
+/**********VOIR PLUS TARD SI LE TEMPS .moving:hover
+{
+    transition-duration: 0.1s;
+    cursor: pointer;
+    height: 100%;
+}*/
+
+/************HEADER************/
+
+nav.flex 
+{
+    justify-content: space-between;
+    align-items: stretch;
+    margin: 0;
+    padding: 0;
+}
+
+li.logoContainer
+{
+    margin-top: 50px;
+    height: 50px;
+    flex: 1 0 140px;
+}
+
+li.logoContainer img
+{
+    height: 100%;
+}
+
+li.menu
+{
+    display: block;
+    margin: 0 10px;
+    padding: 50px 25px 0 25px;
+    border-top: 2px solid transparent;
+}
+
+li.active
+{
+    color: #0065FC !important;
+    border-top: 2px #0065FC solid;
+    text-decoration: none;
+}
+
+a#register
+{
+    font-weight: bold;
+    color: #0065FC;
+}
+
+@media screen and (max-width: 400px) {
+  
+    header li.register {
+      order: 0;
+    }
+    
+    header li.link {
+      width: 50%;
+      order: 1;
+      margin: 0;
+      text-align: center;
+      border-bottom: 3px solid lightgray;
+    }
+  
+    header li.active {
+      border-top: 3px solid transparent;
+      border-bottom: 3px solid blue;
+    }
+  }
+
+/************MAIN************/
+
+/*TITLE*/
+
+#title
+{
+    margin: 0 0 20px 0;
+}
+
+
+/*SEARCH*/
+
+.search
+{
+    
+}
+
+form
+{
+    display: inline-flex; /****************************pkoi ?***********/
+    margin-bottom: 30px;
+    height: 50px;
+    line-height: 50px;
+}
+
+input[type=search], input[type=submit]
+{
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0 15px;
+}
+
+.fa-map-marker-alt
+{
+    background-color: #F2F2F2;
+    border: 2px solid #F2F2F2;
+    border-radius: 15px 0 0 15px;
+    min-width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    padding: 15px;
+}
+
+input[type=search]
+{
+    flex: 1 1 auto;
+    border: 1px solid #F2F2F2;
+    width: 235px;
+}
+
+input[type=submit]
+{
+    background-color: #0065FC;
+    border: 2px solid #0065FC;
+    color: white;
+    cursor: pointer;
+    border-radius: 0 15px 15px 0;
+    margin-left: -1px;
+}
+
+/*FILTERS*/
+
+.filters-container
+{
+    margin-bottom: 30px;
+    align-items: center;
+}
+
+
+
+.filters>h3 /*@media  ajouter une largeur de 100% à mon h3******************************/
+{
+    margin: 0 30px 10px 0;
+}
+
+.filters div
+{
+    display: block;
+    height: 50px;
+    /*width: max-content;*/
+    border: 2px solid #F2F2F2;
+    border-radius: 100px;
+    margin: 0 20px 10px 0;
+}
+
+.filter span
+{
+    position: relative;
+    display: inline-block;
+    top: -2px;
+    left: -2px;
+    background-color: #DEEBFF;
+    width: 50px;
+	line-height: 50px;
+    text-align: center;
+    border-radius: 50%;
+    /*transform: scale(1.1);  A REVOIR***************************************************/
+}
+
+.filter h3
+{
+    display: inline-block;
+    height: 50px;
+    line-height: 50px;
+    transform: translateY(-2px);
+    margin: 0 22px 0 12px;
+}
+
+p.info
+{
+    display: block;
+    height: 25px;
+    line-height: 25px;
+    margin-bottom: 35px;
+}
+
+.info span
+{
+    position: relative;
+    display: inline-block;
+    top: -2px;
+    left: -2px;
+    border: 2px solid #F2F2F2;    
+    width: 25px;
+    height:25px;
+    line-height: 25px;
+    border-radius: 50%;
+    margin-right: 10px;
+    text-align: center;
+}
+
+/*SECTION DES RESULTATS DE RECHERCHE*/
+
+.section-results
+{
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+
+.section-results h2
+{
+    line-height: 20px;
+    margin: inherit;
+}
+
+.grey-box
+{
+    padding: 40px;
+    background-color: #F2F2F2;
+}
+
+.stars
+{
+    display: inline-flex;
+    font-size: 0.8em;
+}
+
+.fa-chart-line
+{
+    font-size: 1.4em;
+}
+
+.white
+{
+    background-color: #FFFFFF;
+    border: 4px white solid;
+    margin: 20px 20px 20px 0;
+}
+
+.section-results img
+{
+    object-fit: cover;
+}
+
+/*HEBERGEMENT*/
+
+.accomodation
+{
+    /*width: 100%;*/
+    flex-grow: 1;
+    flex-basis: 50%;
+    flex-shrink: 0;
+}
+
+.accomodation-results
+{
+    justify-content: space-evenly;
+}
+
+.accomodation-box
+{
+    /*flex-basis: 250px;*/
+    width: 250px;
+    justify-content: space-between;
+}
+
+.accomodation-box img
+{
+    width: 100%;
+    height: 100px;
+}
+
+.accomodation-description
+{
+    margin: 5px 10px 5px 10px;
+}
+
+.accomodation-description *
+{
+    line-height: 1.5em;
+}
+
+/*LES PLUS POPULAIRES*/
+
+aside
+{
+    max-width: 430px;
+    flex-grow: 0;
+    flex-basis: 430px;
+    flex-shrink: 0;
+    margin-left: 20px; /* en dessous d'une certaine dimension, passer à zéro et mettre margin-bottom*/
+}
+
+.popular-box
+{
+    width: 350px;
+}
+
+.popular-box a
+{
+    height: 130px;
+}
+
+.popular-title
+{
+    justify-content: space-between;
+    align-items: center;
+}
+
+.popular-box img
+{
+    width: 130px;
+    height: 130px;
+}
+
+.popular-description
+{
+    margin: 10px 10px 10px 20px;
+    width: 170px;
+}
+
+.popular-text *
+{
+    margin: 0 0 5px 0;
+}
+
+.popular-description>ul
+{
+    margin-top: 30px;
+}
+
+/*SECTION DES ACTIVITIES*/
+
+.section-activities
+{
+    margin: 40px 0 10px 0;
+}
+
+
+.grid
+{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    /*grid-template-rows: 195px 43px 43px auto;*/
+    grid-template-rows: 43.33% 9.56% 9.56% auto;
+    column-gap: 43px;
+    height: 450px;
+}
+
+.activity-box a
+{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+
+.activity-box img
+{
+    display: block;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.activity-text
+{
+    display: block;
+    position: sticky;
+    bottom: 0;
+    background-color: #FFFFFF;
+    padding: 10px;
+    min-height: 55px;
+}
+
+.one
+{
+    grid-row: 1/5;
+}
+
+.two
+{
+    grid-row: 1/3;
+}
+
+.three
+{
+    grid-row: 4/5;
+}
+
+.four
+{
+    grid-row: 1/5;
+}
+
+.five
+{
+    grid-row: 1/2;
+}
+
+.six
+{
+    grid-row: 3/5;
+}
+
+/************FOOTER************/
+
+footer
+{
+    /*display: flex;
+    flex-wrap: wrap;*/
+    margin-top: 60px;
+    background-color: #F2F2F2;
+    padding: 40px 0;
+}
+
+#footer
+{
+    width: 93.05%;
+    margin: auto;
+    max-width: 1440px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+footer div
+{
+    padding-right: 150px;
+    margin-top: -20px;
+}
+
+/************TABLE DES MATIERES************/
+
+
+
+
+
+/************HELP************/
+
+/*box-shadow: 0px 6px 6px #dddddd; /* décalage-horizontal décalage-vertical adoucissement couleur */
+/*border-radius: 0 15px 15px 0; /* top-left top-right bottom-right bottom-left */
+/*color: inherit; /*********************************************/
+
+
+
+
+
+
+/*MEDIA QUERY pour adapter le site aux interfaces : https://www.alsacreations.com/article/lire/930-css3-media-queries.html*/
+
