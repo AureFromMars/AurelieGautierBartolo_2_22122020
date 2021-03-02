@@ -1,0 +1,316 @@
+
+/*******************MAX WIDTH 1330px*******************/
+
+@media screen and (max-width: 1440px)
+{
+    /*HEBERGEMENT*/
+
+    .grid-accomodations
+    {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto auto;
+        max-height: 100%;
+    }
+
+    .three-accomodation
+    {
+        grid-row: 2/3;
+    }
+
+    .five-accomodation
+    {
+        grid-row: 3/4;
+    }
+
+    .six-accomodation
+    {
+        grid-row: 3/4;
+    }
+}
+
+/*******************MAX WIDTH 1200px*******************/
+
+
+@media screen and (max-width: 1200px)
+{
+    div.accomodation
+    {
+        border-radius: 0;
+        padding: 0;
+        background-color: #FFFFFF;
+    }
+    
+    .accomodation
+    {
+        flex: 1 50% 0;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    aside
+    {
+        max-width: 100%;
+        flex-grow: 1;
+        flex-basis: 100%;
+        flex-shrink: 0;
+        margin-left: auto;
+        margin-bottom: 20px;
+        width: 100%;
+    }
+
+    .grid-popular
+    {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        gap: 30px;
+        width: 100%;
+    }
+
+    /*HEBERGEMENT*/
+    
+    .grid-accomodations
+    {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 30px;
+        justify-content: space-between;
+        margin-bottom: 39px;
+        max-width: 100%;
+        max-height: 428px;
+    }
+
+    .three-accomodation
+    {
+        grid-row: 1/2;
+    }
+
+    .five-accomodation
+    {
+        grid-row: 2/3;
+    }
+
+    .six-accomodation
+    {
+        grid-row: 2/3;
+    }
+}
+
+/*******************MAX WIDTH 1160px*******************/
+
+
+@media screen and (max-width: 1160px)
+{
+
+    .grid-popular
+    {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        gap: 30px;
+        width: 100%;
+    }
+
+    /*HEBERGEMENT*/
+    
+    .grid-accomodations
+    {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 30px;
+        justify-content: space-between;
+        margin-bottom: 39px;
+        max-width: 100%;
+        max-height: 428px;
+    }
+
+    .three-accomodation
+    {
+        grid-row: 1/2;
+    }
+
+    .five-accomodation
+    {
+        grid-row: 2/3;
+    }
+
+    .six-accomodation
+    {
+        grid-row: 2/3;
+    }
+}
+
+/*******************MAX WIDTH 900px*******************/
+
+@media screen and (max-width: 900px)
+{
+    /*ACTIVITES*/
+    
+    .grid-activities
+    {
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto auto;
+        gap: 30px;
+        height: 600px;
+    }
+
+    .one-activity
+    {
+        grid-row: 1/2;
+    }
+
+    .two-activity
+    {
+        grid-row: 2/3;
+    }
+
+    .three-activity
+    {
+        grid-row: 3/4;
+    }
+
+    .four-activity
+    {
+        grid-row: 1/2;
+    }
+
+    .five-activity
+    {
+        grid-row: 2/3;
+    }
+
+    .six-activity
+    {
+        grid-row: 3/4;
+    }
+}
+
+
+/*******************MAX WIDTH 600px*******************/
+
+@media screen and (max-width: 600px)
+{
+    /*ACTIVITES*/
+    
+    .grid-activities
+    {
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        gap: 20px;
+        height: 900px;
+    }
+
+    .one-activity
+    {
+        grid-row: 1/2;
+    }
+
+    .two-activity
+    {
+        grid-row: 2/3;
+    }
+
+    .three-activity
+    {
+        grid-row: 3/4;
+    }
+
+    .four-activity
+    {
+        grid-row: 4/5;
+    }
+
+    .five-activity
+    {
+        grid-row: 5/6;
+    }
+
+    .six-activity
+    {
+        grid-row: 6/7;
+    }
+}
+
+/*******************MAX WIDTH 375px *******************/
+
+@media screen and (max-width: 375px)
+{
+    main
+    {
+        margin: 0 20px 0 15px;
+    }
+
+    header
+    {
+        margin: 0;
+    }
+
+    /************HEADER************/
+
+    li.logoContainer
+    {
+        margin: 22px 0 0 20px;
+    }
+
+    li.menu
+    {
+        padding: 0;
+        margin: 0;
+    }
+
+    li.register
+    {
+        margin: 38px 21px 0 0;
+        order: 0;
+    }
+      
+    li.link
+    {
+        width: 50%;
+        order: 1;
+        margin: 18px 0 0 0;
+        padding-bottom: 13px;
+        text-align: center;
+        border-bottom: 3px solid #F2F2F2;
+    }
+    
+    li.active
+    {
+        border-top: 3px solid transparent;
+        border-bottom: 3px solid #0065FC;
+    }
+
+    /************MAIN************/
+
+    /*TITLE*/
+
+    #title
+    {
+        margin: -5px 0 20px 5px;
+    }
+
+    #title h1
+    {
+        margin-bottom: 15px;
+    }
+
+    form
+    {
+        margin: 14px 0 35px 0;
+    }
+
+    input[type=search]
+    {
+        width: 236px;
+    }
+
+    span.submit_button
+    {
+        display: none;
+    }
+
+    i.submit_button
+    {
+        display: block;
+    }
+}

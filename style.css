@@ -3,14 +3,12 @@ par Aurélie GAUTIER BARTOLO
 */
 
 
-/*Sous 900px : mettre le grid sur 2 colonnes*/
-
-
 /************ICONS************/
 
 .fas
 {
     border-radius: 50%;
+    font-size: 1.2em;
 }
 
 .blue
@@ -20,7 +18,7 @@ par Aurélie GAUTIER BARTOLO
 
 .grey
 {
-    color: #F2F2F2;
+    color: #d9d9d9;
 }
 
 /************TEXT************/
@@ -43,30 +41,42 @@ ul
 
 h1
 {
-    font-size: 1.3em;
-    margin: 50px 0 15px 0;
+    font-size: 1.36em;
+    margin: 37px 0 8px 0px;
 }
 
 h2
 {
-    font-size: 1.4em;
+    font-size: 1.37em;
+}
+
+.subtitle
+{
+    margin-bottom: 23px;
 }
 
 h3, input
 {
-    font-size: 1.1em;
+    font-size: 1.12em;
 }
 
 h4
 {
-    font-size: 1em;
+    font-size: 0.99em;
     margin: 0;
 
 }
 
-p{
-    /*font-size: 0.9em;*/
+p
+{
+    font-size: 0.97em;
 }
+
+.little
+{
+    font-size: 0.87em;
+}
+
 
 a:link, a:visited
 {
@@ -104,8 +114,8 @@ body
 
 main, header
 {
-    width: 93.05%;
     margin: auto;
+    padding: 0 50px;
     max-width: 1440px;
 }
 
@@ -129,9 +139,36 @@ main, header
     flex-direction: row;
 }
 
+.bottom-0
+{
+    bottom: 0;
+}
+
+.table
+{
+    display: table;
+}
+
+.table-cell-middle
+{
+    vertical-align: middle;
+    display: table-cell;
+}
+
+.table-cell-bottom
+{
+    vertical-align: bottom;
+    display: table-cell;
+}
+
+.sticky
+{
+    position: sticky;
+}
+
 .rounded-box
 {
-    border-radius: 15px;
+    border-radius: 20px;
     overflow: hidden;
 }
 
@@ -145,40 +182,32 @@ main, header
     margin: 0;
 }
 
-/**********VOIR PLUS TARD SI LE TEMPS .moving:hover
+.scale:hover
 {
-    transition-duration: 0.1s;
+    transform: scale(1.02);
+    transition-duration: 0.2s;
     cursor: pointer;
-    height: 100%;
-}*/
+}
 
 /************HEADER************/
 
-nav.flex 
-{
-    justify-content: space-between;
-    align-items: stretch;
-    margin: 0;
-    padding: 0;
-}
-
 li.logoContainer
 {
-    margin-top: 50px;
-    height: 50px;
+    margin: 42px 0 0px 3px;
     flex: 1 0 140px;
 }
 
-li.logoContainer img
+.logoContainer img
 {
-    height: 100%;
+    height: 50px;
+    width: 97px;
 }
 
 li.menu
 {
     display: block;
     margin: 0 10px;
-    padding: 50px 25px 0 25px;
+    padding: 47px 17px 0 31px;
     border-top: 2px solid transparent;
 }
 
@@ -189,31 +218,11 @@ li.active
     text-decoration: none;
 }
 
-a#register
+.register a
 {
     font-weight: bold;
     color: #0065FC;
 }
-
-@media screen and (max-width: 400px) {
-  
-    header li.register {
-      order: 0;
-    }
-    
-    header li.link {
-      width: 50%;
-      order: 1;
-      margin: 0;
-      text-align: center;
-      border-bottom: 3px solid lightgray;
-    }
-  
-    header li.active {
-      border-top: 3px solid transparent;
-      border-bottom: 3px solid blue;
-    }
-  }
 
 /************MAIN************/
 
@@ -221,7 +230,7 @@ a#register
 
 #title
 {
-    margin: 0 0 20px 0;
+    margin: -6px 0 20px 5px;
 }
 
 
@@ -235,7 +244,7 @@ a#register
 form
 {
     display: inline-flex; /****************************pkoi ?***********/
-    margin-bottom: 30px;
+    margin: 0 0 31px 4px;
     height: 50px;
     line-height: 50px;
 }
@@ -244,7 +253,6 @@ input[type=search], input[type=submit]
 {
     text-decoration: none;
     font-weight: bold;
-    padding: 0 15px;
 }
 
 .fa-map-marker-alt
@@ -252,18 +260,19 @@ input[type=search], input[type=submit]
     background-color: #F2F2F2;
     border: 2px solid #F2F2F2;
     border-radius: 15px 0 0 15px;
-    min-width: 50px;
+    width: 51px;
     height: 50px;
-    line-height: 50px;
+    line-height: 48px;
     text-align: center;
-    padding: 15px;
+    padding: 15px 15px 15px 20px;
 }
 
 input[type=search]
 {
     flex: 1 1 auto;
     border: 1px solid #F2F2F2;
-    width: 235px;
+    width: 238px;
+    padding: 0 18px;
 }
 
 input[type=submit]
@@ -274,21 +283,45 @@ input[type=submit]
     cursor: pointer;
     border-radius: 0 15px 15px 0;
     margin-left: -1px;
+    width: 135px;
+    padding: 0 13px;
+}
+
+button
+{
+    background-color: #0065FC;
+    border: 2px solid #0065FC;
+    color: white;
+    cursor: pointer;
+    border-radius: 0 15px 15px 0;
+    margin-left: -1px;
+    width: 135px;
+    padding: 0 13px;
+    font-size: 1.1em;
+    font-weight: bolder;
+}
+
+i.submit_button
+{
+    display: none;
 }
 
 /*FILTERS*/
 
-.filters-container
+div.margin-left-10
 {
-    margin-bottom: 30px;
-    align-items: center;
+    margin-left: 10px;
 }
 
-
-
-.filters>h3 /*@media  ajouter une largeur de 100% à mon h3******************************/
+.filters-container
 {
-    margin: 0 30px 10px 0;
+    align-items: center;
+    margin-bottom: 35px;
+}
+
+.filters-container>h3 /*@media  ajouter une largeur de 100% à mon h3******************************/
+{
+    margin: 0 29px 0 2px;
 }
 
 .filters div
@@ -296,9 +329,9 @@ input[type=submit]
     display: block;
     height: 50px;
     /*width: max-content;*/
-    border: 2px solid #F2F2F2;
+    border: 2px solid #d9d9d9;
     border-radius: 100px;
-    margin: 0 20px 10px 0;
+    margin: 0 20px 0 3px;
 }
 
 .filter span
@@ -321,30 +354,31 @@ input[type=submit]
     height: 50px;
     line-height: 50px;
     transform: translateY(-2px);
-    margin: 0 22px 0 12px;
+    margin: 0 23px 0 10px;
 }
 
-p.info
+p#info
 {
     display: block;
     height: 25px;
     line-height: 25px;
-    margin-bottom: 35px;
+    margin-bottom: 37px;
 }
 
-.info span
+#info span
 {
     position: relative;
     display: inline-block;
     top: -2px;
     left: -2px;
-    border: 2px solid #F2F2F2;    
+    border: 2px solid #F2F2F2;
     width: 25px;
     height:25px;
-    line-height: 25px;
+    line-height: 20px;
     border-radius: 50%;
-    margin-right: 10px;
+    margin-right: 9px;
     text-align: center;
+    font-size: 0.7em;
 }
 
 /*SECTION DES RESULTATS DE RECHERCHE*/
@@ -352,25 +386,18 @@ p.info
 .section-results
 {
     flex-direction: row-reverse;
-    justify-content: space-between;
-}
-
-.section-results h2
-{
-    line-height: 20px;
-    margin: inherit;
 }
 
 .grey-box
 {
-    padding: 40px;
+    padding: 42px 40px 30px 40px;
     background-color: #F2F2F2;
 }
 
 .stars
 {
     display: inline-flex;
-    font-size: 0.8em;
+    font-size: 0.65em;
 }
 
 .fa-chart-line
@@ -381,8 +408,7 @@ p.info
 .white
 {
     background-color: #FFFFFF;
-    border: 4px white solid;
-    margin: 20px 20px 20px 0;
+    border: 5.5px white solid;
 }
 
 .section-results img
@@ -394,33 +420,69 @@ p.info
 
 .accomodation
 {
-    /*width: 100%;*/
     flex-grow: 1;
     flex-basis: 50%;
-    flex-shrink: 0;
+    flex-shrink: 0; /*IDEM than flex: 1 50% 0;*/
+    max-width: 880px;
+    
+}
+
+.grid-accomodations
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 30px;
+    justify-content: space-between;
+    margin-bottom: 39px;
+    max-width: 798px;
+    max-height: 428px;
+}
+
+.one-accomodation
+{
+    grid-row: 1/2;
+}
+
+.two-accomodation
+{
+    grid-row: 1/2;
+}
+
+.three-accomodation
+{
+    grid-row: 1/2;
+}
+
+.four-accomodation
+{
+    grid-row: 2/3;
+}
+
+.five-accomodation
+{
+    grid-row: 2/3;
+}
+
+.six-accomodation
+{
+    grid-row: 2/3;
 }
 
 .accomodation-results
 {
-    justify-content: space-evenly;
-}
-
-.accomodation-box
-{
-    /*flex-basis: 250px;*/
-    width: 250px;
-    justify-content: space-between;
+    /*justify-content: center;*/
 }
 
 .accomodation-box img
 {
     width: 100%;
-    height: 100px;
+    height: 115px;
 }
 
 .accomodation-description
 {
-    margin: 5px 10px 5px 10px;
+    margin: 2px 15px 10px 12px;
 }
 
 .accomodation-description *
@@ -432,21 +494,30 @@ p.info
 
 aside
 {
-    max-width: 430px;
-    flex-grow: 0;
-    flex-basis: 430px;
+    max-width: 420px;
+    flex-grow: 1;
+    flex-basis: 50%;
     flex-shrink: 0;
-    margin-left: 20px; /* en dessous d'une certaine dimension, passer à zéro et mettre margin-bottom*/
+    margin-left: 40px;
+}
+
+.grid-popular
+{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 30px;
+    width: 340px;
 }
 
 .popular-box
 {
-    width: 350px;
+    width: 100%;
 }
 
 .popular-box a
 {
-    height: 130px;
+    height: 136px;
 }
 
 .popular-title
@@ -457,48 +528,84 @@ aside
 
 .popular-box img
 {
-    width: 130px;
-    height: 130px;
+    width: 126px;
 }
 
 .popular-description
 {
-    margin: 10px 10px 10px 20px;
-    width: 170px;
+    margin: 10px 20px 5px 20px;
+}
+
+.popular-description>div
+{
+    height: 100%;
+    justify-content: space-between;
 }
 
 .popular-text *
 {
-    margin: 0 0 5px 0;
+    margin: 5px 0 6px 0;
 }
 
-.popular-description>ul
+/*.table-stars
 {
-    margin-top: 30px;
+    height:100%;
 }
+
+.table-stars>div
+{
+    height: 100%;
+}*/
 
 /*SECTION DES ACTIVITIES*/
 
 .section-activities
 {
-    margin: 40px 0 10px 0;
+    margin: 60px 0 10px 0;
 }
 
 
-.grid
+.grid-activities
 {
     display: grid;
     grid-template-columns: auto auto auto auto;
-    /*grid-template-rows: 195px 43px 43px auto;*/
     grid-template-rows: 43.33% 9.56% 9.56% auto;
     column-gap: 43px;
-    height: 450px;
+    height: 444px;
+}
+
+.one-activity
+{
+    grid-row: 1/5;
+}
+
+.two-activity
+{
+    grid-row: 1/3;
+}
+
+.three-activity
+{
+    grid-row: 4/5;
+}
+
+.four-activity
+{
+    grid-row: 1/5;
+}
+
+.five-activity
+{
+    grid-row: 1/2;
+}
+
+.six-activity
+{
+    grid-row: 3/5;
 }
 
 .activity-box a
 {
-    display: flex;
-    flex-direction: column;
     height: 100%;
     width: 100%;
 }
@@ -513,68 +620,40 @@ aside
 
 .activity-text
 {
-    display: block;
-    position: sticky;
-    bottom: 0;
     background-color: #FFFFFF;
-    padding: 10px;
+    padding: 12px 10px 10px 18px;
     min-height: 55px;
 }
 
-.one
+/*.activity-text h4
 {
-    grid-row: 1/5;
-}
+    vertical-align: middle;
+    display: table-cell;
+}*/
 
-.two
-{
-    grid-row: 1/3;
-}
-
-.three
-{
-    grid-row: 4/5;
-}
-
-.four
-{
-    grid-row: 1/5;
-}
-
-.five
-{
-    grid-row: 1/2;
-}
-
-.six
-{
-    grid-row: 3/5;
-}
 
 /************FOOTER************/
 
 footer
 {
-    /*display: flex;
-    flex-wrap: wrap;*/
-    margin-top: 60px;
+    margin-top: 61px;
     background-color: #F2F2F2;
-    padding: 40px 0;
-}
-
-#footer
-{
-    width: 93.05%;
-    margin: auto;
-    max-width: 1440px;
-    display: flex;
-    flex-wrap: wrap;
+    padding: 45px 40px 40px 50px;
 }
 
 footer div
 {
-    padding-right: 150px;
-    margin-top: -20px;
+    padding-right: 232px;
+}
+
+footer h3
+{
+    margin-bottom: 20px;
+}
+
+footer p
+{
+    margin-bottom: 12px;
 }
 
 /************TABLE DES MATIERES************/
