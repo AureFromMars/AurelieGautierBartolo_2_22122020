@@ -22,9 +22,10 @@ Faire une modif dans un dossier, ajouter le paramètre -r après la commande, co
 Les commandes liées au partage GITHUB sont :  
 >git init  
 >git clone  
->git add  
->git pull  
->git push  
+>1. git add  : git add . pour tout
+>2. git commit -m "Message"
+>3. git pull  
+>4. git push  
 >git status  
 >git branch  
 >git checkout  

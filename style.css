@@ -41,8 +41,9 @@ ul
 
 h1
 {
-    font-size: 1.36em;
-    margin: 37px 0 8px 0px;
+    font-size: 1.37em;
+    margin: 36px 0 8px 0px;
+    letter-spacing: -0.003em;
 }
 
 h2
@@ -69,7 +70,8 @@ h4
 
 p
 {
-    font-size: 0.97em;
+    font-size: 0.98em;
+    letter-spacing: 0.01em;
 }
 
 .little
@@ -115,8 +117,8 @@ body
 main, header
 {
     margin: auto;
-    padding: 0 50px;
-    max-width: 1440px;
+    padding: 0 33px 0 50px;
+    /*max-width: 1440px;*/
 }
 
 .flex
@@ -185,7 +187,7 @@ main, header
 .scale:hover
 {
     transform: scale(1.02);
-    transition-duration: 0.2s;
+    transition-duration: 0.1s;
     cursor: pointer;
 }
 
@@ -264,27 +266,15 @@ input[type=search], input[type=submit]
     height: 50px;
     line-height: 48px;
     text-align: center;
-    padding: 15px 15px 15px 20px;
+    padding: 15px;
 }
 
 input[type=search]
 {
     flex: 1 1 auto;
     border: 1px solid #F2F2F2;
-    width: 238px;
-    padding: 0 18px;
-}
-
-input[type=submit]
-{
-    background-color: #0065FC;
-    border: 2px solid #0065FC;
-    color: white;
-    cursor: pointer;
-    border-radius: 0 15px 15px 0;
-    margin-left: -1px;
-    width: 135px;
-    padding: 0 13px;
+    width: 236px;
+    padding: 0 17px;
 }
 
 button
@@ -295,7 +285,7 @@ button
     cursor: pointer;
     border-radius: 0 15px 15px 0;
     margin-left: -1px;
-    width: 135px;
+    width: 134px;
     padding: 0 13px;
     font-size: 1.1em;
     font-weight: bolder;
@@ -308,7 +298,7 @@ i.submit_button
 
 /*FILTERS*/
 
-div.margin-left-10
+div.filters-block
 {
     margin-left: 10px;
 }
@@ -319,7 +309,7 @@ div.margin-left-10
     margin-bottom: 35px;
 }
 
-.filters-container>h3 /*@media  ajouter une largeur de 100% à mon h3******************************/
+.filters-container>h3
 {
     margin: 0 29px 0 2px;
 }
@@ -328,7 +318,6 @@ div.margin-left-10
 {
     display: block;
     height: 50px;
-    /*width: max-content;*/
     border: 2px solid #d9d9d9;
     border-radius: 100px;
     margin: 0 20px 0 3px;
@@ -345,7 +334,6 @@ div.margin-left-10
 	line-height: 50px;
     text-align: center;
     border-radius: 50%;
-    /*transform: scale(1.1);  A REVOIR***************************************************/
 }
 
 .filter h3
@@ -357,24 +345,21 @@ div.margin-left-10
     margin: 0 23px 0 10px;
 }
 
-p#info
+div.info
 {
-    display: block;
-    height: 25px;
     line-height: 25px;
     margin-bottom: 37px;
 }
 
-#info span
+.info>div
 {
     position: relative;
-    display: inline-block;
-    top: -2px;
+    top: 0px;
     left: -2px;
     border: 2px solid #F2F2F2;
     width: 25px;
     height:25px;
-    line-height: 20px;
+    line-height: 19px;
     border-radius: 50%;
     margin-right: 9px;
     text-align: center;
@@ -386,11 +371,14 @@ p#info
 .section-results
 {
     flex-direction: row-reverse;
+    gap: 40px;
+    /*width: 100%;
+    margin: 0;*/
 }
 
 .grey-box
 {
-    padding: 42px 40px 30px 40px;
+    padding: 42px 40px 37px 40px;
     background-color: #F2F2F2;
 }
 
@@ -416,18 +404,39 @@ p#info
     object-fit: cover;
 }
 
+.box
+{
+    width: 100%;
+}
+
+.box a
+{
+    height: 100%;
+}
+
+.description
+{
+    margin: 10px 20px 5px 20px;
+}
+
+.description>div
+{
+    height: 100%;
+    justify-content: space-between;
+}
+
 /*HEBERGEMENT*/
 
 .accomodation
 {
     flex-grow: 1;
-    flex-basis: 50%;
-    flex-shrink: 0; /*IDEM than flex: 1 50% 0;*/
-    max-width: 880px;
-    
+    flex-basis: 64%;
+    flex-shrink: 0; /*IDEM than flex: 1 50% 0;
+    width: auto;*/
+    gap: 30px;
 }
 
-.grid-accomodations
+/*.grid-accomodations
 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -437,6 +446,28 @@ p#info
     margin-bottom: 39px;
     max-width: 798px;
     max-height: 428px;
+    width: auto;
+}*/
+
+.grid-accomodations
+{
+    display: flex;
+    flex-wrap: wrap;
+    /*flex-direction: row;*/
+    gap: 30px;
+    margin-bottom: 39px;
+}
+
+/*.grid-accomodations a
+{
+    flex: 30%;
+}*/
+
+.accomodation .box
+{
+    flex: 30%;
+    /*width: 248px;*/
+    height: 199px;
 }
 
 .one-accomodation
@@ -467,57 +498,61 @@ p#info
 .six-accomodation
 {
     grid-row: 2/3;
-}
+}*/
 
-.accomodation-results
-{
-    /*justify-content: center;*/
-}
-
-.accomodation-box img
+.accomodation img
 {
     width: 100%;
     height: 115px;
 }
 
-.accomodation-description
+.accomodation .description
 {
     margin: 2px 15px 10px 12px;
 }
 
-.accomodation-description *
+.accomodation .description *
 {
     line-height: 1.5em;
+}
+
+.description>div
+{
+    margin: 0;
 }
 
 /*LES PLUS POPULAIRES*/
 
 aside
 {
-    max-width: 420px;
+    /*max-width: 31.35%;420px;*/
     flex-grow: 1;
-    flex-basis: 50%;
+    flex-basis: 30%;
     flex-shrink: 0;
-    margin-left: 40px;
+    /*margin-left: 40px;*/
 }
 
 .grid-popular
 {
-    display: grid;
+    /*display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     gap: 30px;
-    width: 340px;
+    width: 340px;*/
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
 }
 
-.popular-box
-{
-    width: 100%;
-}
-
-.popular-box a
+.popular .box a
 {
     height: 136px;
+}
+
+.popular .box img
+{
+    width: 126px;
 }
 
 .popular-title
@@ -526,36 +561,10 @@ aside
     align-items: center;
 }
 
-.popular-box img
-{
-    width: 126px;
-}
-
-.popular-description
-{
-    margin: 10px 20px 5px 20px;
-}
-
-.popular-description>div
-{
-    height: 100%;
-    justify-content: space-between;
-}
-
 .popular-text *
 {
     margin: 5px 0 6px 0;
 }
-
-/*.table-stars
-{
-    height:100%;
-}
-
-.table-stars>div
-{
-    height: 100%;
-}*/
 
 /*SECTION DES ACTIVITIES*/
 
@@ -563,7 +572,6 @@ aside
 {
     margin: 60px 0 10px 0;
 }
-
 
 .grid-activities
 {
@@ -625,25 +633,19 @@ aside
     min-height: 55px;
 }
 
-/*.activity-text h4
-{
-    vertical-align: middle;
-    display: table-cell;
-}*/
-
-
 /************FOOTER************/
 
 footer
 {
     margin-top: 61px;
     background-color: #F2F2F2;
-    padding: 45px 40px 40px 50px;
+    padding: 45px 40px 35px 50px;
+    gap: 30px;
 }
 
 footer div
 {
-    padding-right: 232px;
+    flex: 1 1 0;
 }
 
 footer h3
