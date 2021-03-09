@@ -306,12 +306,12 @@ div.filters-block
 .filters-container
 {
     align-items: center;
-    margin-bottom: 35px;
+    margin-bottom: 15px;
 }
 
 .filters-container>h3
 {
-    margin: 0 29px 0 2px;
+    margin: 0 29px 20px 2px;
 }
 
 .filters div
@@ -320,7 +320,7 @@ div.filters-block
     height: 50px;
     border: 2px solid #d9d9d9;
     border-radius: 100px;
-    margin: 0 20px 0 3px;
+    margin: 0 20px 20px 3px;
 }
 
 .filter span
@@ -470,7 +470,7 @@ div.info
     height: 199px;
 }
 
-.one-accomodation
+/*.one-accomodation
 {
     grid-row: 1/2;
 }
@@ -552,7 +552,8 @@ aside
 
 .popular .box img
 {
-    width: 126px;
+    max-width: 38%;
+    min-width: 38%;
 }
 
 .popular-title
