@@ -176,7 +176,7 @@ main, header
 
 .shadow
 {
-    box-shadow: 0px 6px 6px #dddddd;
+    box-shadow: 0px 6px 10px #ececec;
 }
 
 .no-margin *
@@ -371,8 +371,8 @@ div.info
 .section-results
 {
     flex-direction: row-reverse;
-    gap: 40px;
-    /*width: 100%;
+    /*gap: 40px;
+    width: 100%;
     margin: 0;*/
 }
 
@@ -432,31 +432,30 @@ div.info
     flex-grow: 1;
     flex-basis: 64%;
     flex-shrink: 0; /*IDEM than flex: 1 50% 0;
-    width: auto;*/
-    gap: 30px;
+    width: auto;
+    gap: 30px;*/
 }
 
-/*.grid-accomodations
+.grid-accomodations
 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    gap: 30px;
-    justify-content: space-between;
     margin-bottom: 39px;
+    grid-gap: 30px;
+    /*justify-content: space-between;
     max-width: 798px;
     max-height: 428px;
-    width: auto;
-}*/
+    width: auto;*/
+}
 
-.grid-accomodations
+/*.grid-accomodations
 {
     display: flex;
     flex-wrap: wrap;
-    /*flex-direction: row;*/
     gap: 30px;
     margin-bottom: 39px;
-}
+}*/
 
 /*.grid-accomodations a
 {
@@ -529,20 +528,28 @@ aside
     flex-grow: 1;
     flex-basis: 30%;
     flex-shrink: 0;
-    /*margin-left: 40px;*/
+    margin-left: 40px;
 }
 
 .grid-popular
 {
-    /*display: grid;
+    display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    gap: 30px;
-    width: 340px;*/
-    display: flex;
+    grid-gap: 30px;
+    /*width: 340px;*/
+    /*display: flex;
     flex-direction: column;
-    gap: 30px;
+    margin-bottom: -30px;
+    margin-right: -30px;
+    gap: 30px;*/
 
+}
+
+.popular .box
+{
+    /*margin-bottom: 30px;
+    margin-right: 30px;*/
 }
 
 .popular .box a
