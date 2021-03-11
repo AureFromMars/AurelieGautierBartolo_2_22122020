@@ -8,7 +8,7 @@ par Aurélie GAUTIER BARTOLO
 .fas
 {
     border-radius: 50%;
-    font-size: 1.2em;
+    font-size: 1.2em;/******************UTILE ?*/
 }
 
 .blue
@@ -27,7 +27,7 @@ par Aurélie GAUTIER BARTOLO
     font-family: 'Raleway', sans-serif;
 }
 
-p, h1, h2, h3, h4/*S'applique à toutes ces balises*/
+p, h1, h2, h3, h4
 {
     margin: 0;
 }
@@ -114,11 +114,10 @@ body
     margin: auto;
 }
 
-main, header
+main, header /***************************POURQUOI ai-je un espace entre mon header et mon main ?*/
 {
     margin: auto;
     padding: 0 33px 0 50px;
-    /*max-width: 1440px;*/
 }
 
 .flex
@@ -248,7 +247,7 @@ form
     display: inline-flex; /****************************pkoi ?***********/
     margin: 0 0 31px 4px;
     height: 50px;
-    line-height: 50px;
+    /*line-height: 50px;*************************************************/
 }
 
 input[type=search], input[type=submit]
@@ -264,7 +263,7 @@ input[type=search], input[type=submit]
     border-radius: 15px 0 0 15px;
     width: 51px;
     height: 50px;
-    line-height: 48px;
+    /*line-height: 48px;************************************************/
     text-align: center;
     padding: 15px;
 }
@@ -275,6 +274,7 @@ input[type=search]
     border: 1px solid #F2F2F2;
     width: 236px;
     padding: 0 17px;
+    color: #000;/**************POURQUOI mon texte n'est pas noir ? FieldText ?****/
 }
 
 button
@@ -371,9 +371,6 @@ div.info
 .section-results
 {
     flex-direction: row-reverse;
-    /*gap: 40px;
-    width: 100%;
-    margin: 0;*/
 }
 
 .grey-box
@@ -409,10 +406,10 @@ div.info
     width: 100%;
 }
 
-.box a
+/*.box a *************** conflit avec .popular .box a
 {
     height: 100%;
-}
+}*/
 
 .description
 {
@@ -431,9 +428,7 @@ div.info
 {
     flex-grow: 1;
     flex-basis: 64%;
-    flex-shrink: 0; /*IDEM than flex: 1 50% 0;
-    width: auto;
-    gap: 30px;*/
+    flex-shrink: 0;
 }
 
 .grid-accomodations
@@ -443,61 +438,12 @@ div.info
     grid-template-rows: 1fr 1fr;
     margin-bottom: 39px;
     grid-gap: 30px;
-    /*justify-content: space-between;
-    max-width: 798px;
-    max-height: 428px;
-    width: auto;*/
 }
-
-/*.grid-accomodations
-{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-    margin-bottom: 39px;
-}*/
-
-/*.grid-accomodations a
-{
-    flex: 30%;
-}*/
 
 .accomodation .box
 {
-    flex: 30%;
-    /*width: 248px;*/
     height: 199px;
 }
-
-/*.one-accomodation
-{
-    grid-row: 1/2;
-}
-
-.two-accomodation
-{
-    grid-row: 1/2;
-}
-
-.three-accomodation
-{
-    grid-row: 1/2;
-}
-
-.four-accomodation
-{
-    grid-row: 2/3;
-}
-
-.five-accomodation
-{
-    grid-row: 2/3;
-}
-
-.six-accomodation
-{
-    grid-row: 2/3;
-}*/
 
 .accomodation img
 {
@@ -524,32 +470,18 @@ div.info
 
 aside
 {
-    /*max-width: 31.35%;420px;*/
     flex-grow: 1;
     flex-basis: 30%;
     flex-shrink: 0;
     margin-left: 40px;
 }
 
-.grid-popular
+.grid-popular /***** IDEM .popular*/
 {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     grid-gap: 30px;
-    /*width: 340px;*/
-    /*display: flex;
-    flex-direction: column;
-    margin-bottom: -30px;
-    margin-right: -30px;
-    gap: 30px;*/
-
-}
-
-.popular .box
-{
-    /*margin-bottom: 30px;
-    margin-right: 30px;*/
 }
 
 .popular .box a
@@ -648,7 +580,6 @@ footer
     margin-top: 61px;
     background-color: #F2F2F2;
     padding: 45px 40px 35px 50px;
-    gap: 30px;
 }
 
 footer div
@@ -665,23 +596,3 @@ footer p
 {
     margin-bottom: 12px;
 }
-
-/************TABLE DES MATIERES************/
-
-
-
-
-
-/************HELP************/
-
-/*box-shadow: 0px 6px 6px #dddddd; /* décalage-horizontal décalage-vertical adoucissement couleur */
-/*border-radius: 0 15px 15px 0; /* top-left top-right bottom-right bottom-left */
-/*color: inherit; /*********************************************/
-
-
-
-
-
-
-/*MEDIA QUERY pour adapter le site aux interfaces : https://www.alsacreations.com/article/lire/930-css3-media-queries.html*/
-
