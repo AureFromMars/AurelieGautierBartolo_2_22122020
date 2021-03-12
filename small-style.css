@@ -260,7 +260,7 @@
         left: 1px;
         border: 2px solid #F2F2F2;
         width: 32px;
-        height:32x;
+        /*height:32x;**********************/
         line-height: 20px;
         margin-right: 4px;
         font-size: 0.8em;
@@ -436,7 +436,7 @@
     }
 }
 
-/*******************MAX WIDTH 375px *******************/
+/*******************MAX WIDTH 375px*******************/
 
 @media screen and (max-width: 375px)
 {
