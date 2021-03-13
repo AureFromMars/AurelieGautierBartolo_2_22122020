@@ -236,9 +236,14 @@
         margin: 0 0 15px 4px;
     }
 
+    .filters
+    {
+        padding-left: 3px;
+    }
+
     .filters div
     {
-        margin: 0 10px 13px 3px;
+        margin: 0 13px 13px 3px;
     }
     
     .filter h3
