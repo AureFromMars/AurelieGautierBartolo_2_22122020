@@ -462,3 +462,13 @@
         margin-top: 7px;
     }
 }
+
+/*******************MAX WIDTH 375px*******************/
+
+@supports (-webkit-touch-callout: none) /* CSS specific to iOS devices */
+{
+    .filters div
+    {
+        margin-right: 10px;
+    }
+}
