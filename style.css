@@ -213,9 +213,16 @@ li.logoContainer
 li.menu
 {
     display: block;
-    margin: 0 10px;
-    padding: 47px 17px 0 31px;
+    margin: 0 4px 0 18px;
+    padding: 47px 23px 0 23px;
     border-top: 2px solid transparent;
+}
+
+li.menu:hover
+{
+    color: #0065FC !important;
+    border-top: 2px #0065FC solid;
+    text-decoration: none;
 }
 
 li.active
