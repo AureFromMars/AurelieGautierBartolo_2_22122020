@@ -202,7 +202,7 @@
 
     input[type=search]
     {
-        max-width: 240px;
+        max-width: 250px;
     }
 
     span.submit_button
@@ -212,10 +212,8 @@
 
     button
     {
-        /*flex-basis: 51px;*/
         border-radius: 15px;
-        margin-left: -9px;
-        /*max-width: 51px;*/
+        margin-left: -19px;
         min-width: 51px;
         width: 51px;
         padding: 0 13px;

@@ -7,7 +7,7 @@ par Aurélie GAUTIER BARTOLO
 .fas
 {
     border-radius: 50%;
-    font-size: 1.2em;/******************UTILE ?*/
+    font-size: 1.2em;
 }
 
 .blue
@@ -410,11 +410,6 @@ div.info
 {
     width: 100%;
 }
-
-/*.box a *************** conflit avec .popular .box a
-{
-    height: 100%;
-}*/
 
 .description
 {
