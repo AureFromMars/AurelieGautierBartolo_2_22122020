@@ -1,7 +1,6 @@
-/*Styles du site Reservia
+/*Style du site Reservia
 par Aurélie GAUTIER BARTOLO
 */
-
 
 /************ICONS************/
 
@@ -23,7 +22,8 @@ par Aurélie GAUTIER BARTOLO
 
 /************TEXT************/
 
-@font-face {
+@font-face
+{
     font-family: 'Raleway', sans-serif;
 }
 
@@ -240,17 +240,11 @@ li.active
     margin: -6px 0 20px 5px;
 }
 
-
 /*SEARCH*/
-
-.search
-{
-    
-}
 
 form
 {
-    display: flex; /****************************pkoi ?***********/
+    display: flex;
     margin: 0 0 31px 4px;
     height: 50px;
 }
@@ -601,6 +595,7 @@ footer
 footer div
 {
     flex: 1 1;
+    margin-right: 20px;
 }
 
 footer h3
@@ -612,3 +607,15 @@ footer p
 {
     margin-bottom: 12px;
 }
+
+
+
+
+/*form = flex row no-wrap
+input width:100%
+
+
+Ppt
+Objectifs
+Pièges et difficultés
+Présentation du site et code*/

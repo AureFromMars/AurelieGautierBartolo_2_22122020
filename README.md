@@ -49,6 +49,17 @@ Les branches
 > git checkout main me permet d'aller sur main  
 > git branch pour vérifier où je me trouve  
 
+Pour plus tard :
+brand.css
+framework.css
+zoning.txt (pourquoi txt ?)
+
 Reste à voir :
 margin-right footer
 responsive search
+images medium
+images names
+
+Questions :
+système de notation
+risque de rejet
