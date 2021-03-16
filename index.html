@@ -1,32 +1,19 @@
-<!DOCTYPE html><!-- Nouveau doctype simplifié -->
-<html lang="fr"><!-- Langue du site -->
+<!DOCTYPE html>
+<html lang="fr">
     <head>
-        <!-- En-tête de la page -->
-        <meta charset="utf-8" /><!-- Encodage des caractères -->
+        <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Activer le mode responsive, diminue la largeur de l'écran -->
-        <link rel="stylesheet" href="style.css" /><!-- Fait le lien avec le fichier CSS cible situé à la racine du même dossier -->
-        <!--<link rel="stylesheet" media="screen and (max-width: 1440px)" media="screen and (max-width: 1200px)" media="screen and (max-width: 1160px)" media="screen and (max-width: 900px)" media="screen and (max-width: 600px)" media="screen and (max-width: 357px)" href="small-style.css" /> -->
+        <link rel="stylesheet" href="style.css" />
         <link rel="stylesheet" href="small-style.css" />
-        <link rel="preconnect" href="https://fonts.gstatic.com"><!-- Fait le lien vers la page de la font, utiliser en prioriété CSS @font-face si Google Font pas disponible -->
-        <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway&display=swap">Fait le lien avec la font spécifique -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
         <link rel="icon" href="reservia_favicon.ico">
-        <script src="https://kit.fontawesome.com/05ffc8aabd.js" crossorigin="anonymous"></script><!-- Fait le lien avec les icones -->
+        <script src="https://kit.fontawesome.com/05ffc8aabd.js" crossorigin="anonymous"></script>
         <title>Reservia</title>
-        <!--https://www.alsacreations.com/article/lire/1337-html5-elements-figure-et-figcaption.html-->
-        <!--[if IE]>
-        <style type="text/css">
-        html pre
-        {
-        width: 636px ;
-        }
-        </style>
-        AJOUTER DES ROLES POUR L'ACCESSIBILITE https://www.lesintegristes.net/2008/12/09/introduction-a-wai-aria-traduction/
-        <![endif]--><!-- Mettre directement dans le CSS avec, entre les balises conditionnelles IE : <link rel="stylesheet" type="text/css" href="only-ie.css" /> -->
     </head>
     <body>
         <div id="bloc-page">
-            <!-- HEADER tout dans nav pour faire en sorte que s'inscrire soit au même niveau que le logo en mobile -->
+            <!-- HEADER -->
             <header>
                 <nav>
                     <ul class="flex wrap row">
@@ -45,7 +32,7 @@
                 </div>
                 <!-- SEARCH -->
                 <div class="search">
-                    <form>
+                    <form class="flex row">
                         <span class="fas fa-map-marker-alt"></span>
                         <input type="search" name="q" placeholder="Marseille, France">
                         <button><span class="submit_button">Rechercher</span><i class="submit_button fas fa-search"></i></button>
@@ -68,14 +55,14 @@
                 </div>
                 <!-- SECTION DES RESULTATS DE RECHERCHE -->
                 <section class="section-results flex wrap">
-                    <!-- ASIDE LES PLUS POPULAIRES FLEX-DIRECTION: ROW-REVERSE -->
+                    <!-- ASIDE LES PLUS POPULAIRES -->
                     <aside class="grey-box rounded-box">
                         <div class="subtitle popular-title flex wrap row">
                             <h2>Les plus populaires</h2>
                             <span class="fas fa-chart-line"></span>
                         </div>
-                        <div class="popular grid-popular">
-                            <div class="box popular-box rounded-box white shadow scale">
+                        <div class="popular">
+                            <div class="box rounded-box white shadow scale">
                                 <a class="flex" href="" title="Hôtel Le soleil du matin">
                                     <img src="images/hebergements/hotel-le-soleil-du-matin.jpg" alt="Image non disponible" title="Hôtel Le soleil du matin"/>
                                     <div class="description popular-description">
@@ -95,7 +82,7 @@
                                     </div>
                                 </a>
                             </div>
-                            <div class="box popular-box rounded-box white shadow scale">
+                            <div class="box rounded-box white shadow scale">
                                 <a class="flex" href="" title="Au cœur de l'eau Chambres d'hôtes">
                                     <img src="images/hebergements/au-coeur-de-l-eau-chambres-d-hotes.jpg" alt="Image non disponible" title="Au cœur de l'eau Chambres d'hôtes"/>
                                     <div class="description popular-description">
@@ -115,7 +102,7 @@
                                     </div>
                                 </a>
                             </div>
-                            <div class="box popular-box rounded-box white shadow scale">
+                            <div class="box rounded-box white shadow scale">
                                 <a class="flex" href="" title="Hôtel Tout bleu et Blanc">
                                     <img src="images/hebergements/hotel-tout-bleu-et-blanc.jpg" alt="Image non disponible" title="Hôtel Tout bleu et Blanc"/>
                                     <div class="description popular-description">
@@ -140,7 +127,7 @@
                     <!-- HEBERGEMENTS -->
                     <div class="grey-box accomodation rounded-box">
                         <h2 class="subtitle" id="accomodation-anchor">Hébergements à Marseille</h2>
-                        <div class="grid-accomodations">
+                        <div class="accomodations">
                             <div class="one-accomodation box rounded-box white shadow scale">
                                 <a href="" title="Auberge la Canebière">
                                     <img src="images/hebergements/auberge-la-canebiere.jpg" alt="Image non disponible" title="Auberge la Canebière"/>
@@ -219,7 +206,7 @@
                                     <div class="description flex column">
                                         <div>
                                             <h4>Auberge Le Panier</h4>
-                                            <p class="little">Nuit à partir de <span class="low-price">23</span><b>€</b></strong></p>
+                                            <p class="little">Nuit à partir de <span class="low-price">23</span><b>€</b></p>
                                         </div>
                                         <ul class="stars">
                                             <li><span class="fas fa-star blue"></span></li>
@@ -256,7 +243,7 @@
                 <!-- SECTION ACTIVITES -->
                 <section class="section-activities">
                     <h2 class="subtitle" id="activities-anchor">Activités à Marseille</h2>
-                    <div class="grid-activities">
+                    <div class="activities">
                         <div class="one-activity activity-box rounded-box shadow scale">
                             <a class="flex column" href="" title="Vieux Port">
                                 <img src="images/activites/vieux-port.jpg" alt="Image non disponible" title="Vieux Port"/>
@@ -298,18 +285,18 @@
             </main>
             <!-- FOOTER -->
             <footer class="flex wrap row">
-                <div id="footer1">
+                <div>
                     <h3>A propos</h3>
                     <p><a href="" title="Lien prévisionnel non actif">Fonctionnement du site</a></p>
                     <p><a href="" title="Lien prévisionnel non actif">Conditions générales de vente</a></p>
                     <p><a href="" title="Lien prévisionnel non actif">Données et confidentialité</a></p>
                 </div>
-                <div id="footer2">
+                <div>
                     <h3>Nos hébergements</h3>
                     <p><a href="" title="Lien prévisionnel non actif">Charte qualité</a></p>
                     <p><a href="" title="Lien prévisionnel non actif">Soumettre votre hôtel</a></p>
                 </div>
-                <div id="footer3">
+                <div>
                     <h3>Assistance</h3>
                     <p><a href="" title="Lien prévisionnel non actif">Centre d'aide</a></p>
                     <p><a href="" title="Lien prévisionnel non actif">Nous contacter</a></p>

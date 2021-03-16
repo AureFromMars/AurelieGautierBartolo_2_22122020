@@ -6,24 +6,20 @@
     
     aside
     {
-        
         flex-grow: 1;
         flex-basis: 100%;
         flex-shrink: 0;
         margin-bottom: 35px;
     }
 
-    .grid-popular
+    .popular
     {
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr;
         gap: 20px;
     }
 
-    /*HEBERGEMENT*/
-    
-    
-    .grid-accomodations
+    .accomodations
     {
         grid-gap: 20px;
     }
@@ -33,7 +29,7 @@
 
 @media screen and (max-width: 1032px)
 {
-    .grid-popular
+    .popular
     {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
@@ -46,7 +42,7 @@
 {
     /*ACTIVITES*/
     
-    .grid-activities
+    .activities
     {
         grid-template-columns: auto auto;
         grid-template-rows: auto auto auto;
@@ -85,12 +81,11 @@
     }
 }
 
-
 /*******************MAX WIDTH 846px*******************/
 
 @media screen and (max-width: 846px)
 {
-    .grid-accomodations
+    .accomodations
     {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr;
@@ -99,7 +94,7 @@
     }
 }
 
-/*******************MAX WIDTH 810px*******************/
+/*******************MAX WIDTH 728px*******************/
 
 @media screen and (max-width: 728px)
 {
@@ -107,17 +102,6 @@
     {
         margin-top: 22px;
         padding: 0;
-    }
-
-    div#title
-    {
-
-        margin: -5px 20px 0 20px;
-    }
-    
-    div.search
-    {
-        margin: 35px 0 0 15px;
     }
 
     /************HEADER************/
@@ -155,15 +139,26 @@
         border-top: 3px solid transparent;
         border-bottom: 3px solid #0065FC;
     }
-/*}
 
-/*******************MAX WIDTH 728px******************SUUUUUUUUUUUUUUUUUUUUUUUUUUUUP*/
+    /************MAIN************/
 
-/*@media screen and (max-width: 728px)
-{*/
-    /*ACTIVITES*/
+    /*TITLE*/
+
+    div#title
+    {
+        margin: -5px 20px 0 20px;
+    }
     
-    .grid-popular
+    /*SEARCH*/
+
+    div.search
+    {
+        margin: 35px 0 0 15px;
+    }
+
+    /*SECTION DES RESULTATS DE RECHERCHE*/
+
+    .popular
     {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr 1fr;
@@ -174,6 +169,13 @@
 
 @media screen and (max-width: 650px)
 {
+    /************MAIN************/
+
+    main
+    {
+        padding: 0;
+    }
+    
     /*TITLE*/
 
     #title
@@ -186,6 +188,8 @@
         margin-bottom: 13px;
     }
 
+    /*SEARCH*/
+
     form
     {
         margin: 0 0 34px 6px;
@@ -194,7 +198,6 @@
     span.fa-map-marker-alt
     {
         font-size: 1.14em;
-        top: -1px;
     }
 
     input[type=search]
@@ -209,11 +212,12 @@
 
     button
     {
-        flex-basis: 51px;
+        /*flex-basis: 51px;*/
         border-radius: 15px;
         margin-left: -9px;
-        max-width: 51px;
+        /*max-width: 51px;*/
         min-width: 51px;
+        width: 51px;
         padding: 0 13px;
         font-size: 0.9em;
     }
@@ -222,6 +226,8 @@
     {
         display: block;
     }
+
+    /*FILTERS*/
 
     div.filters-block
     {
@@ -277,69 +283,10 @@
     {
         position: relative;
         top: 2px;
-        left: 8px;
+        left: 7px;
     }
 
-    /*ACTIVITES*/
-    
-    .section-activities
-    {
-        margin: 53px 2px 10px 22px;
-    }
-
-    div.activity-box
-    {
-        height: 190px;
-    }
-
-    .grid-activities
-    {
-        grid-template-columns: auto;
-        grid-template-rows: auto;
-        grid-gap: 23px;
-        height: auto;
-    }
-
-    .four-activity
-    {
-        grid-row: 4/5;
-    }
-
-    .five-activity
-    {
-        grid-row: 5/6;
-    }
-
-    .six-activity
-    {
-        grid-row: 6/7;
-    }
-
-    /*****FOOTER*******/
-
-    footer.row
-    {
-        margin-top: 49px;
-        padding-left: 29px;
-        flex-direction: column;
-    }
-
-    footer div
-    {
-        padding-right: 0;
-        margin-right: 0;
-        margin-bottom: 28px;
-    }
-/*}
-
-/*******************MAX WIDTH 605px******************SUUUUUUUUUUUUUUUUUUUUUUUUUUUUP*/
-
-/*@media screen and (max-width: 605px)
-{*/
-    main
-    {
-        padding: 0;
-    }
+    /*SECTION DES RESULTATS DE RECHERCHE*/
     
     div.grey-box
     {
@@ -347,6 +294,13 @@
         padding: 0 3px 0 19px;
         border-radius: 0;
         background-color: #fff;
+    }
+
+    /*HEBERGEMENT*/
+
+    .accomodation .grey-box
+    {
+        padding: 0;
     }
 
     .accomodation .subtitle
@@ -359,7 +313,7 @@
         margin-left: 11px;
     }
 
-    .grid-accomodations
+    .accomodations
     {
         grid-template-columns: 1fr;
         grid-template-rows: 200px 200px 200px 200px 200px 200px;
@@ -398,18 +352,13 @@
 
     /*LES PLUS POPULAIRES*/
     
-    .accomodation .grey-box
-    {
-        padding: 0;
-    }
-
     aside.rounded-box
     {
         border-radius: 0;
         padding: 38px 2px 38px 20px;
     }
 
-    .grid-popular
+    .popular
     {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr 1fr;
@@ -422,6 +371,57 @@
     {
         height: 133px;
     }
+
+    /*SECTION DES ACTIVITES*/
+
+    .section-activities
+    {
+        margin: 53px 2px 10px 22px;
+    }
+
+    div.activity-box
+    {
+        height: 190px;
+    }
+
+    .activities
+    {
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        grid-gap: 23px;
+        height: auto;
+    }
+
+    .four-activity
+    {
+        grid-row: 4/5;
+    }
+
+    .five-activity
+    {
+        grid-row: 5/6;
+    }
+
+    .six-activity
+    {
+        grid-row: 6/7;
+    }
+
+    /************FOOTER************/
+
+    footer.row
+    {
+        margin-top: 49px;
+        padding-left: 29px;
+        flex-direction: column;
+    }
+
+    footer div
+    {
+        padding-right: 0;
+        margin-right: 0;
+        margin-bottom: 28px;
+    }
 }
 
 /*******************MAX WIDTH 420px *******************/
@@ -432,13 +432,8 @@
     {
         margin: 0 0 0 20px;
     }
-/*}
 
-/*******************MAX WIDTH 375px******************SUUUUUUUUUUUUUUUUUUUUUUUUUUUUP*/
-
-/*@media screen and (max-width: 375px)
-{*/
-    .popular .box img 
+    .popular .box img
     {
         max-width: 39%;
         min-width: 39%;

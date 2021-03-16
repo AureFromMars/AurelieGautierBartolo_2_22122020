@@ -120,7 +120,7 @@ body
     min-width: 300px;
 }
 
-main, header /***************************POURQUOI ai-je un espace entre mon header et mon main ?*/
+main, header
 {
     margin: auto;
     padding: 0 33px 0 50px;
@@ -244,9 +244,10 @@ li.active
 
 form
 {
-    display: flex;
+    flex-wrap: nowrap;
     margin: 0 0 31px 4px;
     height: 50px;
+    width: 100%;
 }
 
 input[type=search], input[type=submit]
@@ -257,13 +258,11 @@ input[type=search], input[type=submit]
 
 .fa-map-marker-alt
 {
-    flex: 1 1 51px;
     background-color: #F2F2F2;
     border: 2px solid #F2F2F2;
     border-radius: 15px 0 0 15px;
-    /*width: 51px;*/
     min-width: 51px;
-    max-width: 51px;
+    width: 51px;
     height: 50px;
     text-align: center;
     padding: 15px;
@@ -271,11 +270,9 @@ input[type=search], input[type=submit]
 
 input[type=search]
 {
-    flex: 1 2 236px;
     border: 1px solid #F2F2F2;
-    /*width: 236px;*/
     max-width: 236px;
-    width: auto;
+    width: 100%;
     padding: 0 17px;
 }
 
@@ -286,16 +283,14 @@ input[type=search]::placeholder
 
 button
 {
-    flex: 1 1 134px;
     background-color: #0065FC;
     border: 2px solid #0065FC;
     color: white;
     cursor: pointer;
     border-radius: 0 15px 15px 0;
     margin-left: -1px;
-    /*width: 134px;*/
-    max-width: 134px;
     min-width: 134px;
+    width: 134px;
     padding: 0 13px;
     font-size: 1.1em;
     font-weight: bolder;
@@ -441,7 +436,7 @@ div.info
     flex-shrink: 0;
 }
 
-.grid-accomodations
+.accomodations
 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -463,7 +458,7 @@ div.info
 
 .accomodation .description
 {
-    margin: 2px 15px 10px 12px;
+    margin: 2px 15px 10px 11px;
 }
 
 .accomodation .description *
@@ -486,7 +481,7 @@ aside
     margin-left: 40px;
 }
 
-.grid-popular /***** IDEM .popular*/
+.popular
 {
     display: grid;
     grid-template-columns: 1fr;
@@ -516,14 +511,14 @@ aside
     margin: 5px 0 6px 0;
 }
 
-/*SECTION DES ACTIVITIES*/
+/*SECTION DES ACTIVITES*/
 
 .section-activities
 {
     margin-top: 60px;
 }
 
-.grid-activities
+.activities
 {
     display: grid;
     grid-template-columns: auto auto auto auto;
@@ -607,15 +602,3 @@ footer p
 {
     margin-bottom: 12px;
 }
-
-
-
-
-/*form = flex row no-wrap
-input width:100%
-
-
-Ppt
-Objectifs
-Pièges et difficultés
-Présentation du site et code*/
