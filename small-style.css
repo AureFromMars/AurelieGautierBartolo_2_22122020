@@ -97,7 +97,6 @@
         max-height: 100%;
         margin-bottom: 30px;
     }
-
 }
 
 /*******************MAX WIDTH 810px*******************/
@@ -106,7 +105,7 @@
 {
     header
     {
-        margin: 22px 0 0 0;
+        margin-top: 22px;
         padding: 0;
     }
 
@@ -118,7 +117,7 @@
     
     div.search
     {
-        margin: 22px 12px 0 15px;
+        margin: 35px 0 0 15px;
     }
 
     /************HEADER************/
@@ -136,7 +135,9 @@
 
     li.register
     {
-        margin: 16px 20px 0 0;
+        /*margin: 16px 5px 0 0;*/
+        margin-top: 16px;
+        margin-right: 5px;
         order: 0;
     }
       
@@ -144,7 +145,7 @@
     {
         width: 50%;
         order: 1;
-        margin: 18px 0 0 0;
+        margin-top: 18px;
         padding-bottom: 13px;
         text-align: center;
         border-bottom: 3px solid #F2F2F2;
@@ -155,12 +156,12 @@
         border-top: 3px solid transparent;
         border-bottom: 3px solid #0065FC;
     }
-}
+/*}
 
-/*******************MAX WIDTH 728px*******************/
+/*******************MAX WIDTH 728px******************SUUUUUUUUUUUUUUUUUUUUUUUUUUUUP*/
 
-@media screen and (max-width: 728px)
-{
+/*@media screen and (max-width: 728px)
+{*/
     /*ACTIVITES*/
     
     .grid-popular
@@ -168,6 +169,7 @@
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr 1fr;
     }
+}
 
 /*******************MAX WIDTH 650px*******************/
 
@@ -187,7 +189,7 @@
 
     form
     {
-        margin: 14px 0 33px 6px;
+        margin: 0 0 34px 6px;
     }
 
     span.fa-map-marker-alt
@@ -198,8 +200,10 @@
 
     input[type=search]
     {
-        /*padding: 0 17px;*/
+        /*padding: 0 17px;
         width: 240px;
+        flex-basis: 240px;*/
+        max-width: 240px;
     }
 
     span.submit_button
@@ -209,9 +213,12 @@
 
     button
     {
+        flex-basis: 51px;
         border-radius: 15px;
         margin-left: -9px;
-        width: 51px;
+        /*width: 51px;*/
+        max-width: 51px;
+        min-width: 51px;
         padding: 0 13px;
         font-size: 0.9em;
     }
@@ -223,7 +230,7 @@
 
     div.filters-block
     {
-        margin-left: 3px;
+        margin-left: 2px;
     }
 
     .filters-container
@@ -233,7 +240,7 @@
 
     .filters-container>h3
     {
-        margin: 0 0 15px 4px;
+        margin: 0 0 15px 5px;
     }
 
     .filters
@@ -243,19 +250,20 @@
 
     .filters div
     {
-        margin: 0 12px 13px 0px;
+        margin: 0 9px 13px 0px;
     }
     
     .filter h3
     {
         font-size: 1em;
-        margin: 0 18px 0 8px;
+        margin: 0 18px 0 9px;
         transform: translateY(-4px);
     }
 
     div.info
     {
         line-height: 20px;
+        margin-left: 1px;
     }
 
     .info>div
@@ -265,10 +273,9 @@
         left: 1px;
         border: 2px solid #F2F2F2;
         width: 32px;
-        /*height:32x;**********************/
         line-height: 20px;
         margin-right: 4px;
-        font-size: 0.8em;
+        font-size: 0.72em;
     }
 
     .info p
@@ -282,35 +289,20 @@
     
     .section-activities
     {
-        margin: 53px 20px 10px 20px;
+        margin: 53px 2px 10px 22px;
     }
 
     div.activity-box
     {
-        height: 188px;
+        height: 190px;
     }
 
     .grid-activities
     {
         grid-template-columns: auto;
         grid-template-rows: auto;
-        grid-gap: 25px;
+        grid-gap: 23px;
         height: auto;
-    }
-
-    .one-activity
-    {
-        grid-row: 1/2;
-    }
-
-    .two-activity
-    {
-        grid-row: 2/3;
-    }
-
-    .three-activity
-    {
-        grid-row: 3/4;
     }
 
     .four-activity
@@ -332,8 +324,8 @@
 
     footer.row
     {
-        margin-top: 50px;
-        padding-left: 30px;
+        margin-top: 49px;
+        padding-left: 29px;
         flex-direction: column;
     }
 
@@ -341,13 +333,14 @@
     {
         padding-right: 0;
         margin-right: 0;
+        margin-bottom: 28px;
     }
-}
+/*}
 
-/*******************MAX WIDTH 605px*******************/
+/*******************MAX WIDTH 605px******************SUUUUUUUUUUUUUUUUUUUUUUUUUUUUP*/
 
-@media screen and (max-width: 605px)
-{
+/*@media screen and (max-width: 605px)
+{*/
     main
     {
         padding: 0;
@@ -355,8 +348,8 @@
     
     div.grey-box
     {
-        margin: 0;
-        padding: 0 16px 0 19px;
+        margin-left: 1px;
+        padding: 0 3px 0 19px;
         border-radius: 0;
         background-color: #fff;
     }
@@ -364,6 +357,11 @@
     .accomodation .subtitle
     {
         margin-bottom: 19px;
+    }
+
+    .accomodation .description 
+    {
+        margin-left: 11px;
     }
 
     .grid-accomodations
@@ -413,7 +411,7 @@
     aside.rounded-box
     {
         border-radius: 0;
-        padding: 38px 20px;
+        padding: 38px 2px 38px 20px;
     }
 
     .grid-popular
@@ -439,12 +437,12 @@
     {
         margin: 0 0 0 20px;
     }
-}
+/*}
 
-/*******************MAX WIDTH 375px*******************/
+/*******************MAX WIDTH 375px******************SUUUUUUUUUUUUUUUUUUUUUUUUUUUUP*/
 
-@media screen and (max-width: 375px)
-{
+/*@media screen and (max-width: 375px)
+{*/
     .popular .box img 
     {
         max-width: 39%;
@@ -454,21 +452,10 @@
     .subtitle
     {
         margin-bottom: 27px;
-        margin-left: 2px;
     }
 
     .description
     {
-        margin-top: 7px;
-    }
-}
-
-/*******************MAX WIDTH 375px*******************/
-
-@supports (-webkit-touch-callout: none) /* CSS specific to iOS devices */
-{
-    .filters div
-    {
-        margin-right: 10px;
+        margin: 6px 20px 7px 19px;
     }
 }

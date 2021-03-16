@@ -24,7 +24,7 @@ Les commandes liées au partage GITHUB sont :
 >git clone  
 >1. git add  : git add . pour tout
 >2. git commit -m "Message"
->3. git pull  
+>3. git pull  (Attention, tu vas récupérer ce qui est déjà sur la branche au risque d'écraser ton site !)
 >4. git push  
 >git status  
 >git branch  
@@ -49,4 +49,6 @@ Les branches
 > git checkout main me permet d'aller sur main  
 > git branch pour vérifier où je me trouve  
 
-Demander à Stan de vérifier ma compréhension de github pour développer sur features puis passer sur main
+Reste à voir :
+margin-right footer
+responsive search
