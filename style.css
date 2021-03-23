@@ -1,7 +1,6 @@
-/*Styles du site Reservia
+/*Style du site Reservia
 par Aurélie GAUTIER BARTOLO
 */
-
 
 /************ICONS************/
 
@@ -23,11 +22,12 @@ par Aurélie GAUTIER BARTOLO
 
 /************TEXT************/
 
-@font-face {
+@font-face
+{
     font-family: 'Raleway', sans-serif;
 }
 
-p, h1, h2, h3, h4/*S'applique à toutes ces balises*/
+p, h1, h2, h3, h4
 {
     margin: 0;
 }
@@ -41,8 +41,9 @@ ul
 
 h1
 {
-    font-size: 1.36em;
-    margin: 37px 0 8px 0px;
+    font-size: 1.37em;
+    margin: 36px 0 8px 0px;
+    letter-spacing: -0.003em;
 }
 
 h2
@@ -52,7 +53,7 @@ h2
 
 .subtitle
 {
-    margin-bottom: 23px;
+    margin-bottom: 22px;
 }
 
 h3, input
@@ -69,12 +70,18 @@ h4
 
 p
 {
-    font-size: 0.97em;
+    font-size: 0.98em;
+    letter-spacing: 0.01em;
 }
 
 .little
 {
     font-size: 0.87em;
+}
+
+.low-price
+{
+    font-weight: bold;
 }
 
 
@@ -110,13 +117,13 @@ body
 #bloc-page
 {
     margin: auto;
+    min-width: 300px;
 }
 
 main, header
 {
     margin: auto;
-    padding: 0 50px;
-    max-width: 1440px;
+    padding: 0 33px 0 50px;
 }
 
 .flex
@@ -174,7 +181,7 @@ main, header
 
 .shadow
 {
-    box-shadow: 0px 6px 6px #dddddd;
+    box-shadow: 0px 6px 10px #ececec;
 }
 
 .no-margin *
@@ -185,7 +192,7 @@ main, header
 .scale:hover
 {
     transform: scale(1.02);
-    transition-duration: 0.2s;
+    transition-duration: 0.1s;
     cursor: pointer;
 }
 
@@ -206,9 +213,16 @@ li.logoContainer
 li.menu
 {
     display: block;
-    margin: 0 10px;
-    padding: 47px 17px 0 31px;
+    margin: 0 4px 0 18px;
+    padding: 47px 23px 0 23px;
     border-top: 2px solid transparent;
+}
+
+li.menu:hover
+{
+    color: #0065FC !important;
+    border-top: 2px #0065FC solid;
+    text-decoration: none;
 }
 
 li.active
@@ -233,20 +247,14 @@ li.active
     margin: -6px 0 20px 5px;
 }
 
-
 /*SEARCH*/
-
-.search
-{
-    
-}
 
 form
 {
-    display: inline-flex; /****************************pkoi ?***********/
+    flex-wrap: nowrap;
     margin: 0 0 31px 4px;
     height: 50px;
-    line-height: 50px;
+    width: 100%;
 }
 
 input[type=search], input[type=submit]
@@ -260,31 +268,24 @@ input[type=search], input[type=submit]
     background-color: #F2F2F2;
     border: 2px solid #F2F2F2;
     border-radius: 15px 0 0 15px;
+    min-width: 51px;
     width: 51px;
     height: 50px;
-    line-height: 48px;
     text-align: center;
-    padding: 15px 15px 15px 20px;
+    padding: 15px;
 }
 
 input[type=search]
 {
-    flex: 1 1 auto;
     border: 1px solid #F2F2F2;
-    width: 238px;
-    padding: 0 18px;
+    max-width: 236px;
+    width: 100%;
+    padding: 0 17px;
 }
 
-input[type=submit]
+input[type=search]::placeholder
 {
-    background-color: #0065FC;
-    border: 2px solid #0065FC;
-    color: white;
-    cursor: pointer;
-    border-radius: 0 15px 15px 0;
-    margin-left: -1px;
-    width: 135px;
-    padding: 0 13px;
+    opacity: 1;
 }
 
 button
@@ -295,7 +296,8 @@ button
     cursor: pointer;
     border-radius: 0 15px 15px 0;
     margin-left: -1px;
-    width: 135px;
+    min-width: 134px;
+    width: 134px;
     padding: 0 13px;
     font-size: 1.1em;
     font-weight: bolder;
@@ -308,7 +310,7 @@ i.submit_button
 
 /*FILTERS*/
 
-div.margin-left-10
+div.filters-block
 {
     margin-left: 10px;
 }
@@ -316,22 +318,21 @@ div.margin-left-10
 .filters-container
 {
     align-items: center;
-    margin-bottom: 35px;
+    margin-bottom: 15px;
 }
 
-.filters-container>h3 /*@media  ajouter une largeur de 100% à mon h3******************************/
+.filters-container>h3
 {
-    margin: 0 29px 0 2px;
+    margin: 0 29px 20px 2px;
 }
 
 .filters div
 {
     display: block;
     height: 50px;
-    /*width: max-content;*/
     border: 2px solid #d9d9d9;
     border-radius: 100px;
-    margin: 0 20px 0 3px;
+    margin: 0 20px 20px 3px;
 }
 
 .filter span
@@ -345,7 +346,6 @@ div.margin-left-10
 	line-height: 50px;
     text-align: center;
     border-radius: 50%;
-    /*transform: scale(1.1);  A REVOIR***************************************************/
 }
 
 .filter h3
@@ -357,24 +357,21 @@ div.margin-left-10
     margin: 0 23px 0 10px;
 }
 
-p#info
+div.info
 {
-    display: block;
-    height: 25px;
     line-height: 25px;
     margin-bottom: 37px;
 }
 
-#info span
+.info>div
 {
     position: relative;
-    display: inline-block;
-    top: -2px;
+    top: 0px;
     left: -2px;
     border: 2px solid #F2F2F2;
     width: 25px;
     height:25px;
-    line-height: 20px;
+    line-height: 19px;
     border-radius: 50%;
     margin-right: 9px;
     text-align: center;
@@ -390,7 +387,7 @@ p#info
 
 .grey-box
 {
-    padding: 42px 40px 30px 40px;
+    padding: 42px 40px 37px 40px;
     background-color: #F2F2F2;
 }
 
@@ -416,108 +413,93 @@ p#info
     object-fit: cover;
 }
 
+.box
+{
+    width: 100%;
+}
+
+.description
+{
+    margin: 10px 20px 5px 20px;
+}
+
+.description>div
+{
+    height: 100%;
+    justify-content: space-between;
+}
+
 /*HEBERGEMENT*/
 
 .accomodation
 {
     flex-grow: 1;
-    flex-basis: 50%;
-    flex-shrink: 0; /*IDEM than flex: 1 50% 0;*/
-    max-width: 880px;
-    
+    flex-basis: 64.54%;
+    flex-shrink: 0;
 }
 
-.grid-accomodations
+.accomodations
 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    gap: 30px;
-    justify-content: space-between;
     margin-bottom: 39px;
-    max-width: 798px;
-    max-height: 428px;
+    grid-gap: 30px;
 }
 
-.one-accomodation
+.accomodation .box
 {
-    grid-row: 1/2;
+    height: 199px;
 }
 
-.two-accomodation
-{
-    grid-row: 1/2;
-}
-
-.three-accomodation
-{
-    grid-row: 1/2;
-}
-
-.four-accomodation
-{
-    grid-row: 2/3;
-}
-
-.five-accomodation
-{
-    grid-row: 2/3;
-}
-
-.six-accomodation
-{
-    grid-row: 2/3;
-}
-
-.accomodation-results
-{
-    /*justify-content: center;*/
-}
-
-.accomodation-box img
+.accomodation img
 {
     width: 100%;
     height: 115px;
 }
 
-.accomodation-description
+.accomodation .description
 {
-    margin: 2px 15px 10px 12px;
+    margin: 2px 15px 10px 11px;
 }
 
-.accomodation-description *
+.accomodation .description *
 {
     line-height: 1.5em;
+}
+
+.description>div
+{
+    margin: 0;
 }
 
 /*LES PLUS POPULAIRES*/
 
 aside
 {
-    max-width: 420px;
     flex-grow: 1;
-    flex-basis: 50%;
+    flex-basis: 30%;
     flex-shrink: 0;
     margin-left: 40px;
 }
 
-.grid-popular
+.popular
 {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    gap: 30px;
-    width: 340px;
+    grid-gap: 30px;
 }
 
-.popular-box
-{
-    width: 100%;
-}
-
-.popular-box a
+.popular .box a
 {
     height: 136px;
+}
+
+.popular .box img
+{
+    max-width: 38%;
+    min-width: 38%;
 }
 
 .popular-title
@@ -526,52 +508,25 @@ aside
     align-items: center;
 }
 
-.popular-box img
-{
-    width: 126px;
-}
-
-.popular-description
-{
-    margin: 10px 20px 5px 20px;
-}
-
-.popular-description>div
-{
-    height: 100%;
-    justify-content: space-between;
-}
-
 .popular-text *
 {
     margin: 5px 0 6px 0;
 }
 
-/*.table-stars
-{
-    height:100%;
-}
-
-.table-stars>div
-{
-    height: 100%;
-}*/
-
-/*SECTION DES ACTIVITIES*/
+/*SECTION DES ACTIVITES*/
 
 .section-activities
 {
-    margin: 60px 0 10px 0;
+    margin-top: 60px;
 }
 
-
-.grid-activities
+.activities
 {
     display: grid;
     grid-template-columns: auto auto auto auto;
     grid-template-rows: 43.33% 9.56% 9.56% auto;
     column-gap: 43px;
-    height: 444px;
+    height: 445px;
 }
 
 .one-activity
@@ -625,25 +580,19 @@ aside
     min-height: 55px;
 }
 
-/*.activity-text h4
-{
-    vertical-align: middle;
-    display: table-cell;
-}*/
-
-
 /************FOOTER************/
 
 footer
 {
     margin-top: 61px;
     background-color: #F2F2F2;
-    padding: 45px 40px 40px 50px;
+    padding: 45px 40px 35px 50px;
 }
 
 footer div
 {
-    padding-right: 232px;
+    flex: 1 1;
+    margin-right: 20px;
 }
 
 footer h3
@@ -655,23 +604,3 @@ footer p
 {
     margin-bottom: 12px;
 }
-
-/************TABLE DES MATIERES************/
-
-
-
-
-
-/************HELP************/
-
-/*box-shadow: 0px 6px 6px #dddddd; /* décalage-horizontal décalage-vertical adoucissement couleur */
-/*border-radius: 0 15px 15px 0; /* top-left top-right bottom-right bottom-left */
-/*color: inherit; /*********************************************/
-
-
-
-
-
-
-/*MEDIA QUERY pour adapter le site aux interfaces : https://www.alsacreations.com/article/lire/930-css3-media-queries.html*/
-
